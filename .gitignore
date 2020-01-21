@@ -2,14 +2,14 @@
 *~
 
 # html output
-*.html
+#*.html
 
 # generated latex & pdf
-*.tex
-*.pdf
+#*.tex
+#*.pdf
 
 # knowl (?)
-knowl
+#knowl
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
