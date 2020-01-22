@@ -8,9 +8,9 @@
       </p>
     </introduction>
     <part xml:id="part-sequences-and-series">
-      <title>Sequences and Series</title>
+      <title>Sequences and Summations</title>
       <introduction>
-        To make sense of Riemann sums, we will first study sequences and series.
+        To make sense of Riemann sums, we will first study sequences and summations.
       </introduction>
       <xi:include href="./chapter-sequences.xml" />
       <xi:include href="./chapter-summations.xml" />
