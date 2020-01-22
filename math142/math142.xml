@@ -12,7 +12,8 @@
       <introduction>
         To make sense of Riemann sums, we will first study sequences and series.
       </introduction>
-      <xi:include href="./sequences.xml" />
+      <xi:include href="./chapter-sequences.xml" />
+      <xi:include href="./chapter-summations.xml" />
     </part>
     <part xml:id="part-integration">
       <title>Integration</title>
