@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xml:id="chapter-riemann-sums" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Riemann Sums</title>
+  <section>
+    <title>Introduction</title>
+    <p>
+      Recall that the <term>definite integral of <m>f</m> on the interval <m>[a,b]</m></term> is defined to be
+      <me>\int_a^b f(x) dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i)\Delta x</me>
+      where <m>\displaystyle \Delta x = \frac{b-a}{n}</m> and <m>x_i = a + i \Delta x</m> for <m>i = 1, \dots, n</m>.
+      This definite integral represents the area under the curve <m>f</m> from <m>a</m> to <m>b</m>.
+    </p>
+    <activity>
+      <introduction>
+        <p>Let <m>f(x) = x+1</m> and <m>[a,b] = [-1,2]</m>.</p>
+      </introduction>
+      <task>Make a sketch which indicates what <m>\displaystyle\int_{-1}^2 f(x) \; dx</m> represents.</task>
+      <task>
+        <p>
+          Determine <m>\Delta x</m>
+        </p>
+      </task>
+      <task>
+        <p>
+          Determine <m>x_i</m>.
+        </p>
+      </task>
+      <task>
+        <p>
+          Determine the Riemann sum <m>\displaystyle\sum_{i=1}^n f(x_i) \Delta x</m>.
+          Simplify.
+        </p>
+      </task>
+      <task>
+        <p>
+          If you didn't already, make use of the fact that <m>\displaystyle \sum_{i=1}^n i = \frac{n(n+1)}{2}</m> and <m>\displaystyle \sum_{i=1}^n 1 = n</m> to further simplify your Riemann sum.
+        </p>
+      </task>
+      <task>
+        <p>
+          Compute <m>\displaystyle\lim_{n \to \infty} \sum_{i=1}^n f(x_i) \Delta x</m>.
+        </p>
+      </task>
+      <task>
+        <p>
+          Compute <m>\displaystyle\int_{-1}^2 x+1 \; dx</m>.
+        </p>
+      </task>
+      <task>
+        <p>
+          Compare your results with your sketch.
+          Does it make sense?
+          Explain.
+        </p>
+      </task>
+    </activity>
+  </section>
+  <section>
+    <title>More Activities</title>
+    <activity>
+      <introduction>
+        <p>
+          Repeat the previous activity for the function <m>g(x) = x^2</m> on the interval <m>[0,2]</m>.
+          That is, compute <m>\displaystyle \int_0^2 x^2 \; dx</m>.
+        </p>
+        <p>
+          You may need to make use of the fact that <m>\displaystyle\sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}</m>.
+        </p>
+      </introduction>
+    </activity>
+    <activity>
+      <introduction>
+        <p>
+          Compute <m>\displaystyle\int_{-2}^2 x^2 \;dx</m>.
+        </p>
+        <p>
+          <em>Hint</em>: Sketch a graph, look for symmetry, and use a previous result.
+        </p>
+      </introduction>
+    </activity>
+    <activity>
+      <introduction>
+        <p>
+          Let <m>f(x) = x^2 -1 </m>.
+        </p>
+      </introduction>
+      <task>Compute <m>\displaystyle \int_{-1}^1 f(x)\; dx</m>.</task>
+      <task>
+        <p>
+          Is your result positive or negative?
+          Draw a picture, and use it to explain why this makes sense.
+        </p>
+      </task>
+    </activity>
+    <activity>
+      <introduction>
+        <p>
+          Suppose that <m>\displaystyle \int_0^3 f(x)\;dx = 0</m>.
+        </p>
+      </introduction>
+      <task>
+        <p>
+          Explain what this means in terms of the area under <m>f</m> from <m>0</m> to <m>3</m>.
+        </p>
+      </task>
+      <task>
+        <p>
+          Draw at least three different graphs of functions where <m>\displaystyle \int_0^3 f(x)\;dx = 0</m>.
+          You do not need to come up with an explicit formula for your functions.
+        </p>
+      </task>
+    </activity>
+    <activity>
+      <introduction>
+        <p>
+          Let <m>f(x) = 1-3x^2</m>.
+        </p>
+      </introduction>
+      <task>
+        <p>
+          Find all values of <m>b</m> so that <m>\displaystyle\int_0^b 1-3x^2\; dx = 0</m>.
+        </p>
+      </task>
+      <task>
+        <p>
+          Sketch a graph to illustrate each case.
+        </p>
+      </task>
+    </activity>
+  </section>
+</chapter>

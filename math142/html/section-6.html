@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-01-21T16:16:35-08:00    *-->
+<!--*    on 2020-01-23T10:30:06-08:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -74,10 +74,10 @@ var js_version = 0.13;
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-5.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-summations.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="part-integration.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-5.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-summations.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="chapter-riemann-sums.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-5.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-summations.html" title="Up">Up</a><a class="next-button button toolbar-item" href="part-integration.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-5.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-summations.html" title="Up">Up</a><a class="next-button button toolbar-item" href="chapter-riemann-sums.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -97,25 +97,31 @@ var js_version = 0.13;
 <li><a href="section-6.html" data-scroll="section-6" class="active">Geometric Sequences and Sums</a></li>
 </ul>
 </li>
+<li class="link">
+<a href="chapter-riemann-sums.html" data-scroll="chapter-riemann-sums"><span class="codenumber">3</span> <span class="title">Riemann Sums</span></a><ul>
+<li><a href="section-7.html" data-scroll="section-7">Introduction</a></li>
+<li><a href="section-8.html" data-scroll="section-8">More Activities</a></li>
+</ul>
+</li>
 <li class="link part"><a href="part-integration.html" data-scroll="part-integration"><span class="codenumber">II</span> <span class="title">Integration</span></a></li>
-<li class="link"><a href="chapter-riemann-sums.html" data-scroll="chapter-riemann-sums"><span class="codenumber">3</span> <span class="title">Riemann Sums</span></a></li>
-<li class="link"><a href="chapter-one-tricky-integral.html" data-scroll="chapter-one-tricky-integral"><span class="codenumber">4</span> <span class="title">One Tricky Integral</span></a></li>
+<li class="link"><a href="chapter-riemann-sums.html" data-scroll="chapter-riemann-sums"><span class="codenumber">4</span> <span class="title">Riemann Sums</span></a></li>
+<li class="link"><a href="chapter-one-tricky-integral.html" data-scroll="chapter-one-tricky-integral"><span class="codenumber">5</span> <span class="title">One Tricky Integral</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="section-6"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.4</span> <span class="title">Geometric Sequences and Sums</span>
 </h2>
-<p id="p-39">A sequence of the form \(a_n = b\cdot r^n\) where \(b\) and \(r\) are fixed real numbers is called a <dfn class="terminology">geometric sequence</dfn>.</p>
-<p id="p-40">A sum of the form \(\displaystyle\sum_{k=m}^n b\cdot r^k\) is called a <dfn class="terminology">geometric sum</dfn>. Notice that a geometric sum is a sum of terms of a geometric sequence.</p>
+<p id="p-41">A sequence of the form \(a_n = b\cdot r^n\) where \(b\) and \(r\) are fixed real numbers is called a <dfn class="terminology">geometric sequence</dfn>.</p>
+<p id="p-42">A sum of the form \(\displaystyle\sum_{k=m}^n b\cdot r^k\) is called a <dfn class="terminology">geometric sum</dfn>. Notice that a geometric sum is a sum of terms of a geometric sequence.</p>
 <article class="activity project-like" id="activity-17"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-19"><p id="p-41">Let \(r\) be any real number, but \(r \neq 1\text{.}\)</p></div>
+<div class="introduction" id="introduction-19"><p id="p-43">Let \(r\) be any real number, but \(r \neq 1\text{.}\)</p></div>
 <article class="task exercise-like" id="task-40"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-42">Show that \(\displaystyle r^k = \Delta \left[\frac{r^{k+1}}{r-1}\right]\text{.}\)</p></article><article class="task exercise-like" id="task-41"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-43">Let \(b\) be any real number. Compute \(\displaystyle\sum_{k=0}^n b r^k\text{.}\)</p></article><article class="task exercise-like" id="task-42"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-44">Compute \(\displaystyle\sum_{k=0}^{10} 3 \left(\frac{4}{5}\right)^k\text{.}\)</p></article><article class="task exercise-like" id="task-43"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<p id="p-45">Compute \(\displaystyle\sum_{k=0}^8  \left(-\frac{5}{4}\right)^k\text{.}\)</p></article></article></section></div></main>
+<p id="p-44">Show that \(\displaystyle r^k = \Delta \left[\frac{r^{k+1}}{r-1}\right]\text{.}\)</p></article><article class="task exercise-like" id="task-41"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-45">Let \(b\) be any real number. Compute \(\displaystyle\sum_{k=0}^n b r^k\text{.}\)</p></article><article class="task exercise-like" id="task-42"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-46">Compute \(\displaystyle\sum_{k=0}^{10} 3 \left(\frac{4}{5}\right)^k\text{.}\)</p></article><article class="task exercise-like" id="task-43"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-47">Compute \(\displaystyle\sum_{k=0}^8  \left(-\frac{5}{4}\right)^k\text{.}\)</p></article></article></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.13/login.js"></script>

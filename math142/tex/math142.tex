@@ -1,6 +1,6 @@
 %**************************************%
 %*    Generated from PreTeXt source   *%
-%*    on 2020-01-21T16:16:42-08:00    *%
+%*    on 2020-01-23T10:29:25-08:00    *%
 %*                                    *%
 %*      https://pretextbook.org       *%
 %*                                    *%
@@ -484,8 +484,12 @@ Determine the summations below.%
 \begin{activity}{}{g:activity:idm212}%
 Combine the summations below into a single summation. Do not compute the sum.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
-\item{}\(\displaystyle\sum_{k=0}^{25} (k+1)(k-1) + 3\sum_{k=0}^{25} k(k+1)\)\item{}\(\displaystyle\sum_{k=0}^{25} (k+1)(k-1) + 3\sum_{j=0}^{25} j(j+1)\)\emph{Hint}: The index of summation is arbitrary.%
-\item{}\(\displaystyle\sum_{k=0}^{25} (k+1)(k-1) + 3\sum_{k=2}^{27} k(k+1)\)\emph{Hint}: Shift the index of summation so that the two sums start at the same place, but don't change the value of the sum!%
+\item{}\(\displaystyle\sum_{k=0}^{25} (k+1)(k-1) + 3\sum_{k=0}^{25} k(k+1)\)\item{}\(\displaystyle\sum_{k=0}^{25} (k+1)(k-1) + 3\sum_{j=0}^{25} j(j+1)\)%
+\par
+\emph{Hint}: The index of summation is arbitrary.%
+\item{}\(\displaystyle\sum_{k=0}^{25} (k+1)(k-1) + 3\sum_{k=2}^{27} k(k+1)\)%
+\par
+\emph{Hint}: Shift the index of summation so that the two sums start at the same place, but don't change the value of the sum!%
 \end{enumerate}
 \end{activity}
 \end{sectionptx}
@@ -495,25 +499,25 @@ Combine the summations below into a single summation. Do not compute the sum.%
 \typeout{Section 2.2 Telescoping Sums}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Telescoping Sums}{}{Telescoping Sums}{}{}{g:section:idm225}
+\begin{sectionptx}{Telescoping Sums}{}{Telescoping Sums}{}{}{g:section:idm227}
 Given a function \(f\), the \terminology{finite difference} function \(\Delta f\) is given by \(\Delta f(k) = f(k) - f(k-1)\).%
-\begin{example}{A Finite Difference.}{g:example:idm232}%
+\begin{example}{A Finite Difference.}{g:example:idm234}%
  If \(f(x) = 2x+1\), then \(\Delta f(3) = f(3) - f(2) = 7-5\)\end{example}
-\begin{activity}{}{g:activity:idm236}%
+\begin{activity}{}{g:activity:idm238}%
 Let \(f(x) = x^2-x+1\). Compute the following.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(\Delta f(1)\)\item{}\(\Delta f(2)\)\item{}\(\Delta f(3)\)\item{}\(\Delta f(4)\)\item{}\(\displaystyle\sum_{k=1}^4\Delta f(k)\)\end{enumerate}
 \end{activity}
 Sometimes we specify the finite difference with simpler notation.%
-\begin{example}{Another Way to Write Finite Differences.}{g:example:idm251}%
+\begin{example}{Another Way to Write Finite Differences.}{g:example:idm253}%
 If \(f(x) = 3x-2\), then we can write \(\Delta f(k)\) as simply \(\Delta (3k-2)\). In this case, \(\Delta (3k-2) = (3k-2) - (3(k-1)-2) = 3k - 2 - (3k - 3 -2) = 3\).%
 \end{example}
-\begin{activity}{}{g:activity:idm258}%
+\begin{activity}{}{g:activity:idm260}%
 Compute the following.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(\Delta k\)\item{}\(\Delta k^2\)\item{}\(\Delta k^3\)\item{}\(\Delta 1\)\end{enumerate}
 \end{activity}
-\begin{activity}{}{g:activity:idm269}%
+\begin{activity}{}{g:activity:idm271}%
 Let \(f\) be a function.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Expand the summation \(\displaystyle\sum_{k = 1}^3 \Delta f(k)\). Is there any simplification to do? If so, simplify.%
@@ -527,8 +531,8 @@ Summations of the form \(\displaystyle\sum_{k = m+1}^n \Delta f(k)\) are called 
 \typeout{Section 2.3 Some Useful Summation Formulas}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Some Useful Summation Formulas}{}{Some Useful Summation Formulas}{}{}{g:section:idm285}
-\begin{activity}{}{g:activity:idm287}%
+\begin{sectionptx}{Some Useful Summation Formulas}{}{Some Useful Summation Formulas}{}{}{g:section:idm287}
+\begin{activity}{}{g:activity:idm289}%
 It will be convenient for us to have simple formulas for computing the sums \(\displaystyle\sum_{k=1}^n k\), \(\displaystyle\sum_{k=1}^n k^2\), and similar types of sums. Conveniently, we can view these as telescoping sums.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Show that \(k = \Delta \left[\frac{k(k+1)}{2}\right]\). That is, show that the right-hand side of the equation simplifies to \(k\).%
@@ -544,17 +548,88 @@ It will be convenient for us to have simple formulas for computing the sums \(\d
 \typeout{Section 2.4 Geometric Sequences and Sums}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Geometric Sequences and Sums}{}{Geometric Sequences and Sums}{}{}{g:section:idm305}
+\begin{sectionptx}{Geometric Sequences and Sums}{}{Geometric Sequences and Sums}{}{}{g:section:idm307}
 A sequence of the form \(a_n = b\cdot r^n\) where \(b\) and \(r\) are fixed real numbers is called a \terminology{geometric sequence}.%
 \par
 A sum of the form \(\displaystyle\sum_{k=m}^n b\cdot r^k\) is called a \terminology{geometric sum}. Notice that a geometric sum is a sum of terms of a geometric sequence.%
-\begin{activity}{}{g:activity:idm315}%
+\begin{activity}{}{g:activity:idm317}%
 Let \(r\) be any real number, but \(r \neq 1\).%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Show that \(\displaystyle r^k = \Delta \left[\frac{r^{k+1}}{r-1}\right]\).%
 \item{}Let \(b\) be any real number. Compute \(\displaystyle\sum_{k=0}^n b r^k\).%
 \item{}Compute \(\displaystyle\sum_{k=0}^{10} 3 \left(\frac{4}{5}\right)^k\).%
 \item{}Compute \(\displaystyle\sum_{k=0}^8  \left(-\frac{5}{4}\right)^k\).%
+\end{enumerate}
+\end{activity}
+\end{sectionptx}
+\end{chapterptx}
+ %
+%
+\typeout{************************************************}
+\typeout{Chapter 3 Riemann Sums}
+\typeout{************************************************}
+%
+\begin{chapterptx}{Riemann Sums}{}{Riemann Sums}{}{}{x:chapter:chapter-riemann-sums}
+%
+%
+\typeout{************************************************}
+\typeout{Section 3.1 Introduction}
+\typeout{************************************************}
+%
+\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm337}
+Recall that the \terminology{definite integral of \(f\) on the interval \([a,b]\)} is defined to be%
+\begin{equation*}
+\int_a^b f(x) dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i)\Delta x
+\end{equation*}
+where \(\displaystyle \Delta x = \frac{b-a}{n}\) and \(x_i = a + i \Delta x\) for \(i = 1, \dots, n\). This definite integral represents the area under the curve \(f\) from \(a\) to \(b\).%
+\begin{activity}{}{g:activity:idm350}%
+Let \(f(x) = x+1\) and \([a,b] = [-1,2]\).%
+\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
+\item{}Make a sketch which indicates what \(\displaystyle\int_{-1}^2 f(x) \; dx\) represents.\item{}Determine \(\Delta x\)%
+\item{}Determine \(x_i\).%
+\item{}Determine the Riemann sum \(\displaystyle\sum_{i=1}^n f(x_i) \Delta x\). Simplify.%
+\item{}If you didn't already, make use of the fact that \(\displaystyle \sum_{i=1}^n i = \frac{n(n+1)}{2}\) and \(\displaystyle \sum_{i=1}^n 1 = n\) to further simplify your Riemann sum.%
+\item{}Compute \(\displaystyle\lim_{n \to \infty} \sum_{i=1}^n f(x_i) \Delta x\).%
+\item{}Compute \(\displaystyle\int_{-1}^2 x+1 \; dx\).%
+\item{}Compare your results with your sketch. Does it make sense? Explain.%
+\end{enumerate}
+\end{activity}
+\end{sectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Section 3.2 More Activities}
+\typeout{************************************************}
+%
+\begin{sectionptx}{More Activities}{}{More Activities}{}{}{g:section:idm378}
+\begin{activity}{}{g:activity:idm380}%
+Repeat the previous activity for the function \(g(x) = x^2\) on the interval \([0,2]\). That is, compute \(\displaystyle \int_0^2 x^2 \; dx\).%
+\par
+You may need to make use of the fact that \(\displaystyle\sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}\).%
+\end{activity}
+\begin{activity}{}{g:activity:idm388}%
+Compute \(\displaystyle\int_{-2}^2 x^2 \;dx\).%
+\par
+\emph{Hint}: Sketch a graph, look for symmetry, and use a previous result.%
+\end{activity}
+\begin{activity}{}{g:activity:idm394}%
+Let \(f(x) = x^2 -1 \).%
+\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
+\item{}Compute \(\displaystyle \int_{-1}^1 f(x)\; dx\).\item{}Is your result positive or negative? Draw a picture, and use it to explain why this makes sense.%
+\end{enumerate}
+\end{activity}
+\begin{activity}{}{g:activity:idm402}%
+Suppose that \(\displaystyle \int_0^3 f(x)\;dx = 0\).%
+\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
+\item{}Explain what this means in terms of the area under \(f\) from \(0\) to \(3\).%
+\item{}Draw at least three different graphs of functions where \(\displaystyle \int_0^3 f(x)\;dx = 0\). You do not need to come up with an explicit formula for your functions.%
+\end{enumerate}
+\end{activity}
+\begin{activity}{}{g:activity:idm414}%
+Let \(f(x) = 1-3x^2\).%
+\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
+\item{}Find all values of \(b\) so that \(\displaystyle\int_0^b 1-3x^2\; dx = 0\).%
+\item{}Sketch a graph to illustrate each case.%
 \end{enumerate}
 \end{activity}
 \end{sectionptx}
@@ -571,7 +646,7 @@ Let \(r\) be any real number, but \(r \neq 1\).%
  %
 %
 \typeout{************************************************}
-\typeout{Chapter 3 Riemann Sums}
+\typeout{Chapter 4 Riemann Sums}
 \typeout{************************************************}
 %
 \begin{chapterptx}{Riemann Sums}{}{Riemann Sums}{}{}{x:chapter:chapter-riemann-sums}
@@ -584,7 +659,7 @@ where \(\Delta x = \frac{b-a}{n}\) and \(x_i = a + i \Delta x\) for \(i = 1, \do
  %
 %
 \typeout{************************************************}
-\typeout{Chapter 4 One Tricky Integral}
+\typeout{Chapter 5 One Tricky Integral}
 \typeout{************************************************}
 %
 \begin{chapterptx}{One Tricky Integral}{}{One Tricky Integral}{}{}{x:chapter:chapter-one-tricky-integral}

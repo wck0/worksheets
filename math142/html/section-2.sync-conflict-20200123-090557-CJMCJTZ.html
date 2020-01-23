@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-01-21T16:16:35-08:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Convergence</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.13;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math142.html"><span class="title">Calculus &amp; Analytical Geometry II</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-sequences.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="chapter-summations.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-sequences.html" title="Up">Up</a><a class="next-button button toolbar-item" href="chapter-summations.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link part"><a href="part-sequences-and-series.html" data-scroll="part-sequences-and-series"><span class="codenumber">I</span> <span class="title">Sequences and Summations</span></a></li>
+<li class="link">
+<a href="chapter-sequences.html" data-scroll="chapter-sequences"><span class="codenumber">1</span> <span class="title">Sequences</span></a><ul>
+<li><a href="section-1.html" data-scroll="section-1">Introduction</a></li>
+<li><a href="section-2.html" data-scroll="section-2" class="active">Convergence</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter-summations.html" data-scroll="chapter-summations"><span class="codenumber">2</span> <span class="title">Summations</span></a><ul>
+<li><a href="section-3.html" data-scroll="section-3">Introduction</a></li>
+<li><a href="section-4.html" data-scroll="section-4">Telescoping Sums</a></li>
+<li><a href="section-5.html" data-scroll="section-5">Some Useful Summation Formulas</a></li>
+<li><a href="section-6.html" data-scroll="section-6">Geometric Sequences and Sums</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-integration.html" data-scroll="part-integration"><span class="codenumber">II</span> <span class="title">Integration</span></a></li>
+<li class="link"><a href="chapter-riemann-sums.html" data-scroll="chapter-riemann-sums"><span class="codenumber">3</span> <span class="title">Riemann Sums</span></a></li>
+<li class="link"><a href="chapter-one-tricky-integral.html" data-scroll="chapter-one-tricky-integral"><span class="codenumber">4</span> <span class="title">One Tricky Integral</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-2"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.2</span> <span class="title">Convergence</span>
+</h2>
+<p id="p-9">For us, the most important feature of a sequence will be whether or not it converges, and, in the case of convergence, what it converges to. The definition of convergence should look familiar:</p>
+<p id="p-10">A sequence \(a_n\) <dfn class="terminology">converges</dfn> to the real number \(L\) if given any \(\varepsilon &gt; 0\) there is an integer \(N\) so that whenever \(n \geq N\text{,}\) \(|a_n - L| &lt; \varepsilon\text{.}\) That is, if \(a_n\) is always close to \(L\) when \(n\) is big, then \(a_n\) converges to \(L\text{.}\) We write this in the usual way: \(\displaystyle\lim_{n \to \infty}a_n = L\text{.}\) Otherwise, the sequence <dfn class="terminology">diverges</dfn>.</p>
+<p id="p-11">If \(a_n\) is a sequence and for any \(M &gt; 0\) there is an integer \(N\) so that whenever \(n \geq N\text{,}\) \(a_n &gt; M\text{,}\) then we say \(a_n\) <dfn class="terminology">diverges to infinity</dfn> and write \(\displaystyle\lim_{n \to \infty}a_n = \infty\text{.}\) If \(a_n\) is a sequence and for any \(M &lt; 0\) there is an integer \(N\) so that whenever \(n \geq N\text{,}\) \(a_n &lt; M\text{,}\) then we say \(a_n\) <dfn class="terminology">diverges to negative infinity</dfn> and write \(\displaystyle\lim_{n \to \infty}a_n = -\infty\text{.}\)</p>
+<article class="example example-like" id="example-3"><a data-knowl="" class="id-ref original" data-refid="hk-example-3"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-3"><article class="example example-like">\(\displaystyle\lim_{n \to \infty} 3n-4 = \infty\) and \(\displaystyle\lim_{n \to \infty} \frac{3n-4}{2n+1} = \frac{3}{2}\text{.}\)</article></div>
+<article class="activity project-like" id="activity-3"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-5"><p id="p-12">For each of the sequences on the previous page, determine which converge and which do not. In case of convergence, determine the limit. In case of divergence, determine which diverge to infinity, which diverge to negative infinity, and which simply diverge.</p></div></article><article class="activity project-like" id="activity-4"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-6"><p id="p-13">Compute the limit as \(n\) goes to \(\infty\) of the sequences below. Most of the usual rules for computing limits of functions apply in the context of sequences.</p></div>
+<article class="task exercise-like" id="task-11"><h6 class="heading"><span class="codenumber">(a)</span></h6>\(a_n = \frac{1}{n}\text{,}\) \(n \geq 1\)</article><article class="task exercise-like" id="task-12"><h6 class="heading"><span class="codenumber">(b)</span></h6>\(b_n = \frac{3n-4}{1-4n}\text{,}\) \(n \geq 0\)</article><article class="task exercise-like" id="task-13"><h6 class="heading"><span class="codenumber">(c)</span></h6>\(c_n = \left(\frac{3}{4}\right)^n\text{,}\) \(n \geq 0\)</article><article class="task exercise-like" id="task-14"><h6 class="heading"><span class="codenumber">(d)</span></h6>\(d_n = \frac{1}{n} - \frac{1}{n-1}\text{,}\) \(n \geq 2\)</article><article class="task exercise-like" id="task-15"><h6 class="heading"><span class="codenumber">(e)</span></h6>\(e_n = \sin(\pi n)\text{,}\) \(n \geq 0\)</article></article><article class="activity project-like" id="activity-5"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-7"><p id="p-14">Give an example of a sequence \(a_n\) and a continuous, non-zero function \(f\) so that the sequence \(a_n\) diverges, but the sequence \(f(a_n)\) converges. Show that both \(a_n\) and \(f(a_n)\) have the stated properties.</p></div></article><article class="activity project-like" id="activity-6"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-8"><p id="p-15">Create a sequence \(a_n\) so that \(0 \leq a_n \leq 3\) for all \(n\text{,}\) and \(a_n\) is <dfn class="terminology">increasing</dfn> in the sense that \(a_n \leq a_{n+1}\) for all \(n\text{.}\) Show that your sequence has the required properties. Does your sequence converge?</p></div></article><article class="activity project-like" id="activity-7"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-9"><p id="p-16">Create a sequence \(a_n\) so that \(1 \leq a_n \leq 4\) for all \(n\text{,}\) and \(a_n\) is <dfn class="terminology">decreasing</dfn> in the sense that \(a_n \geq a_{n+1}\) for all \(n\text{.}\) Show that your sequence has the required properties. Does your sequence converge?</p></div></article><article class="activity project-like" id="activity-8"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-10"><p id="p-17">Create a sequence \(a_n\) so that \(2 \leq a_n \leq 3\) for all \(n\text{,}\) and \(a_n\) diverges. Is \(a_n\) increasing? Decreasing?</p></div></article><article class="activity project-like" id="activity-9"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-11"><p id="p-18">Is it true that if \(a_n \leq b_n\) for all \(n\text{,}\) and \(b_n\) is convergent, then \(a_n\) is also convergent? If so, explain why. If not, give an example to show this.</p></div></article><article class="activity project-like" id="activity-10"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-12"><p id="p-19">Is it true that if \(a_n \geq b_n\) for all \(n\text{,}\) and \(b_n\) is divergent, then \(a_n\) is also divergent? If so, explain why. If not, give an example to show this.</p></div></article></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.13/login.js"></script>
+</body>
+</html>

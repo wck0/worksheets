@@ -14,6 +14,7 @@
       </introduction>
       <xi:include href="./chapter-sequences.xml" />
       <xi:include href="./chapter-summations.xml" />
+      <xi:include href="./chapter-riemann-sums.xml" />
     </part>
     <part xml:id="part-integration">
       <title>Integration</title>
