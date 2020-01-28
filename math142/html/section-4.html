@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-01-23T10:30:06-08:00    *-->
+<!--*    on 2020-01-28T10:14:45-08:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -24,7 +24,7 @@ MathJax.Hub.Config({
     jax: ["input/AsciiMath"],
     extensions: ["asciimath2jax.js"],
     TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
         positionToHash: false,
         equationNumbers: { autoNumber: "none", useLabelIds: true, },
@@ -104,8 +104,6 @@ var js_version = 0.13;
 </ul>
 </li>
 <li class="link part"><a href="part-integration.html" data-scroll="part-integration"><span class="codenumber">II</span> <span class="title">Integration</span></a></li>
-<li class="link"><a href="chapter-riemann-sums.html" data-scroll="chapter-riemann-sums"><span class="codenumber">4</span> <span class="title">Riemann Sums</span></a></li>
-<li class="link"><a href="chapter-one-tricky-integral.html" data-scroll="chapter-one-tricky-integral"><span class="codenumber">5</span> <span class="title">One Tricky Integral</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="section-4"><h2 class="heading hide-type">
@@ -132,7 +130,7 @@ var js_version = 0.13;
 </h6>
 <div class="introduction" id="introduction-17"><p id="p-33">Let \(f\) be a function.</p></div>
 <article class="task exercise-like" id="task-32"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-34">Expand the summation \(\displaystyle\sum_{k = 1}^3 \Delta f(k)\text{.}\) Is there any simplification to do? If so, simplify.</p></article><article class="task exercise-like" id="task-33"><h6 class="heading"><span class="codenumber">(b)</span></h6>Without expanding, simplify: \(\displaystyle\sum_{k = 1}^{10} \Delta f(k)\)</article><article class="task exercise-like" id="task-34"><h6 class="heading"><span class="codenumber">(c)</span></h6>Without expanding, simplify: \(\displaystyle\sum_{k = 3}^{10} \Delta f(k)\)</article><article class="task exercise-like" id="task-35"><h6 class="heading"><span class="codenumber">(d)</span></h6>Without expanding, simplify: \(\displaystyle\sum_{k = m+1}^{n} \Delta f(k)\)</article></article><p id="p-35">Summations of the form \(\displaystyle\sum_{k = m+1}^n \Delta f(k)\) are called <dfn class="terminology">telescoping sums</dfn>, a reference to the collapsible telescopes of yore. These are some of the easiest summations to deal with, since we can determine the value of the sum computing all of the terms of the sequence being summed.</p></section></div></main>
+<p id="p-34">Expand the summation \(\displaystyle\sum_{k = 1}^3 \Delta f(k)\text{.}\) Is there any simplification to do? If so, simplify.</p></article><article class="task exercise-like" id="task-33"><h6 class="heading"><span class="codenumber">(b)</span></h6>Without expanding, simplify: \(\displaystyle\sum_{k = 1}^{10} \Delta f(k)\)</article><article class="task exercise-like" id="task-34"><h6 class="heading"><span class="codenumber">(c)</span></h6>Without expanding, simplify: \(\displaystyle\sum_{k = 3}^{10} \Delta f(k)\)</article><article class="task exercise-like" id="task-35"><h6 class="heading"><span class="codenumber">(d)</span></h6>Without expanding, simplify: \(\displaystyle\sum_{k = m+1}^{n} \Delta f(k)\)</article></article><p id="p-35">Summations of the form \(\displaystyle\sum_{k = m+1}^n \Delta f(k)\) are called <dfn class="terminology">telescoping sums</dfn>, a reference to the collapsible telescopes of yore. These are some of the easiest summations to deal with, since we can determine the value of the sum <em class="emphasis">without</em> computing all of the terms of the sequence being summed.</p></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.13/login.js"></script>

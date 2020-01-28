@@ -110,7 +110,7 @@
     </activity>
     <p>
       Summations of the form <m>\displaystyle\sum_{k = m+1}^n \Delta f(k)</m> are called <term>telescoping sums</term>, a reference to the collapsible telescopes of yore.
-      These are some of the easiest summations to deal with, since we can determine the value of the sum computing all of the terms of the sequence being summed.
+      These are some of the easiest summations to deal with, since we can determine the value of the sum <em>without</em> computing all of the terms of the sequence being summed.
     </p>
   </section>
   <section>

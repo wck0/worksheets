@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<docinfo xml:id="bookinfo" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <latex-preamble>
+    \geometry{letterpaper, margin=0.5in}
+  </latex-preamble>
+</docinfo>

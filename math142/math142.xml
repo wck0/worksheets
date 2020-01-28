@@ -22,21 +22,6 @@
         This worksheet discusses material from section 1.1 of your book.
         We begin with some friendly review.
       </p>
-      <chapter xml:id="chapter-riemann-sums">
-        <title>Riemann Sums</title>
-        <p>
-          Recall that the definite integral of <m>f</m> on the closed interval <m>[a,b]</m> is
-          <me>\int_a^b f(x)\; dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i) \Delta x</me>
-          where <m>\Delta x = \frac{b-a}{n}</m> and <m>x_i = a + i \Delta x</m> for <m>i = 1, \dots, n</m>.
-          This definite integral represents the area under the curve <m>f</m> from <m>a</m> to <m>b</m>.
-        </p>
-      </chapter>
-      <chapter xml:id="chapter-one-tricky-integral">
-        <title>One Tricky Integral</title>
-        <p>
-          <me>\int_0^\pi \sin(x)\;dx</me>
-        </p>
-      </chapter>
     </part>
   </book>
 </pretext>
