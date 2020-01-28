@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-01-28T10:14:45-08:00    *-->
+<!--*    on 2020-01-28T10:50:48-08:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -69,7 +69,7 @@ var js_version = 0.13;
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
 <h1 class="heading"><a href="math142.html"><span class="title">Calculus &amp; Analytical Geometry II</span></a></h1>
-<p class="byline"></p>
+<p class="byline">William C. Kronholm</p>
 </div>
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
@@ -82,6 +82,9 @@ var js_version = 0.13;
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
+<li class="link">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul><li><a href="preface.html" data-scroll="preface">Preface</a></li></ul>
+</li>
 <li class="link part"><a href="part-sequences-and-series.html" data-scroll="part-sequences-and-series"><span class="codenumber">I</span> <span class="title">Sequences and Summations</span></a></li>
 <li class="link">
 <a href="chapter-sequences.html" data-scroll="chapter-sequences"><span class="codenumber">1</span> <span class="title">Sequences</span></a><ul>
@@ -109,38 +112,38 @@ var js_version = 0.13;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="section-2"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1.2</span> <span class="title">Convergence</span>
 </h2>
-<p id="p-9">For us, the most important feature of a sequence will be whether or not it converges, and, in the case of convergence, what it converges to. The definition of convergence should look familiar:</p>
-<p id="p-10">A sequence \(a_n\) <dfn class="terminology">converges</dfn> to the real number \(L\) if given any \(\varepsilon &gt; 0\) there is an integer \(N\) so that whenever \(n \geq N\text{,}\) \(|a_n - L| &lt; \varepsilon\text{.}\) That is, if \(a_n\) is always close to \(L\) when \(n\) is big, then \(a_n\) converges to \(L\text{.}\) We write this in the usual way: \(\displaystyle\lim_{n \to \infty}a_n = L\text{.}\) Otherwise, the sequence <dfn class="terminology">diverges</dfn>.</p>
-<p id="p-11">If \(a_n\) is a sequence and for any \(M &gt; 0\) there is an integer \(N\) so that whenever \(n \geq N\text{,}\) \(a_n &gt; M\text{,}\) then we say \(a_n\) <dfn class="terminology">diverges to infinity</dfn> and write \(\displaystyle\lim_{n \to \infty}a_n = \infty\text{.}\) If \(a_n\) is a sequence and for any \(M &lt; 0\) there is an integer \(N\) so that whenever \(n \geq N\text{,}\) \(a_n &lt; M\text{,}\) then we say \(a_n\) <dfn class="terminology">diverges to negative infinity</dfn> and write \(\displaystyle\lim_{n \to \infty}a_n = -\infty\text{.}\)</p>
+<p id="p-11">For us, the most important feature of a sequence will be whether or not it converges, and, in the case of convergence, what it converges to. The definition of convergence should look familiar:</p>
+<p id="p-12">A sequence \(a_n\) <dfn class="terminology">converges</dfn> to the real number \(L\) if given any \(\varepsilon &gt; 0\) there is an integer \(N\) so that whenever \(n \geq N\text{,}\) \(|a_n - L| &lt; \varepsilon\text{.}\) That is, if \(a_n\) is always close to \(L\) when \(n\) is big, then \(a_n\) converges to \(L\text{.}\) We write this in the usual way: \(\displaystyle\lim_{n \to \infty}a_n = L\text{.}\) Otherwise, the sequence <dfn class="terminology">diverges</dfn>.</p>
+<p id="p-13">If \(a_n\) is a sequence and for any \(M &gt; 0\) there is an integer \(N\) so that whenever \(n \geq N\text{,}\) \(a_n &gt; M\text{,}\) then we say \(a_n\) <dfn class="terminology">diverges to infinity</dfn> and write \(\displaystyle\lim_{n \to \infty}a_n = \infty\text{.}\) If \(a_n\) is a sequence and for any \(M &lt; 0\) there is an integer \(N\) so that whenever \(n \geq N\text{,}\) \(a_n &lt; M\text{,}\) then we say \(a_n\) <dfn class="terminology">diverges to negative infinity</dfn> and write \(\displaystyle\lim_{n \to \infty}a_n = -\infty\text{.}\)</p>
 <article class="example example-like" id="example-3"><a data-knowl="" class="id-ref original" data-refid="hk-example-3"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-3"><article class="example example-like">\(\displaystyle\lim_{n \to \infty} 3n-4 = \infty\) and \(\displaystyle\lim_{n \to \infty} \frac{3n-4}{2n+1} = \frac{3}{2}\text{.}\)</article></div>
 <article class="activity project-like" id="activity-3"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-5"><p id="p-12">For each of the sequences on the previous page, determine which converge and which do not. In case of convergence, determine the limit. In case of divergence, determine which diverge to infinity, which diverge to negative infinity, and which simply diverge.</p></div></article><article class="activity project-like" id="activity-4"><h6 class="heading">
+<div class="introduction" id="introduction-5"><p id="p-14">For each of the sequences on the previous page, determine which converge and which do not. In case of convergence, determine the limit. In case of divergence, determine which diverge to infinity, which diverge to negative infinity, and which simply diverge.</p></div></article><article class="activity project-like" id="activity-4"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-6"><p id="p-13">Compute the limit as \(n\) goes to \(\infty\) of the sequences below. Most of the usual rules for computing limits of functions apply in the context of sequences.</p></div>
+<div class="introduction" id="introduction-6"><p id="p-15">Compute the limit as \(n\) goes to \(\infty\) of the sequences below. Most of the usual rules for computing limits of functions apply in the context of sequences.</p></div>
 <article class="task exercise-like" id="task-11"><h6 class="heading"><span class="codenumber">(a)</span></h6>\(a_n = \frac{1}{n}\text{,}\) \(n \geq 1\)</article><article class="task exercise-like" id="task-12"><h6 class="heading"><span class="codenumber">(b)</span></h6>\(b_n = \frac{3n-4}{1-4n}\text{,}\) \(n \geq 0\)</article><article class="task exercise-like" id="task-13"><h6 class="heading"><span class="codenumber">(c)</span></h6>\(c_n = \left(\frac{3}{4}\right)^n\text{,}\) \(n \geq 0\)</article><article class="task exercise-like" id="task-14"><h6 class="heading"><span class="codenumber">(d)</span></h6>\(d_n = \frac{1}{n} - \frac{1}{n-1}\text{,}\) \(n \geq 2\)</article><article class="task exercise-like" id="task-15"><h6 class="heading"><span class="codenumber">(e)</span></h6>\(e_n = \sin(\pi n)\text{,}\) \(n \geq 0\)</article></article><article class="activity project-like" id="activity-5"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-7"><p id="p-14">Give an example of a sequence \(a_n\) and a continuous, non-zero function \(f\) so that the sequence \(a_n\) diverges, but the sequence \(f(a_n)\) converges. Show that both \(a_n\) and \(f(a_n)\) have the stated properties.</p></div></article><article class="activity project-like" id="activity-6"><h6 class="heading">
+<div class="introduction" id="introduction-7"><p id="p-16">Give an example of a sequence \(a_n\) and a continuous, non-zero function \(f\) so that the sequence \(a_n\) diverges, but the sequence \(f(a_n)\) converges. Show that both \(a_n\) and \(f(a_n)\) have the stated properties.</p></div></article><article class="activity project-like" id="activity-6"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-8"><p id="p-15">Create a sequence \(a_n\) so that \(0 \leq a_n \leq 3\) for all \(n\text{,}\) and \(a_n\) is <dfn class="terminology">increasing</dfn> in the sense that \(a_n \leq a_{n+1}\) for all \(n\text{.}\) Show that your sequence has the required properties. Does your sequence converge?</p></div></article><article class="activity project-like" id="activity-7"><h6 class="heading">
+<div class="introduction" id="introduction-8"><p id="p-17">Create a sequence \(a_n\) so that \(0 \leq a_n \leq 3\) for all \(n\text{,}\) and \(a_n\) is <dfn class="terminology">increasing</dfn> in the sense that \(a_n \leq a_{n+1}\) for all \(n\text{.}\) Show that your sequence has the required properties. Does your sequence converge?</p></div></article><article class="activity project-like" id="activity-7"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-9"><p id="p-16">Create a sequence \(a_n\) so that \(1 \leq a_n \leq 4\) for all \(n\text{,}\) and \(a_n\) is <dfn class="terminology">decreasing</dfn> in the sense that \(a_n \geq a_{n+1}\) for all \(n\text{.}\) Show that your sequence has the required properties. Does your sequence converge?</p></div></article><article class="activity project-like" id="activity-8"><h6 class="heading">
+<div class="introduction" id="introduction-9"><p id="p-18">Create a sequence \(a_n\) so that \(1 \leq a_n \leq 4\) for all \(n\text{,}\) and \(a_n\) is <dfn class="terminology">decreasing</dfn> in the sense that \(a_n \geq a_{n+1}\) for all \(n\text{.}\) Show that your sequence has the required properties. Does your sequence converge?</p></div></article><article class="activity project-like" id="activity-8"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-10"><p id="p-17">Create a sequence \(a_n\) so that \(2 \leq a_n \leq 3\) for all \(n\text{,}\) and \(a_n\) diverges. Is \(a_n\) increasing? Decreasing?</p></div></article><article class="activity project-like" id="activity-9"><h6 class="heading">
+<div class="introduction" id="introduction-10"><p id="p-19">Create a sequence \(a_n\) so that \(2 \leq a_n \leq 3\) for all \(n\text{,}\) and \(a_n\) diverges. Is \(a_n\) increasing? Decreasing?</p></div></article><article class="activity project-like" id="activity-9"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-11"><p id="p-18">Is it true that if \(a_n \leq b_n\) for all \(n\text{,}\) and \(b_n\) is convergent, then \(a_n\) is also convergent? If so, explain why. If not, give an example to show this.</p></div></article><article class="activity project-like" id="activity-10"><h6 class="heading">
+<div class="introduction" id="introduction-11"><p id="p-20">Is it true that if \(a_n \leq b_n\) for all \(n\text{,}\) and \(b_n\) is convergent, then \(a_n\) is also convergent? If so, explain why. If not, give an example to show this.</p></div></article><article class="activity project-like" id="activity-10"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-12"><p id="p-19">Is it true that if \(a_n \geq b_n\) for all \(n\text{,}\) and \(b_n\) is divergent, then \(a_n\) is also divergent? If so, explain why. If not, give an example to show this.</p></div></article></section></div></main>
+<div class="introduction" id="introduction-12"><p id="p-21">Is it true that if \(a_n \geq b_n\) for all \(n\text{,}\) and \(b_n\) is divergent, then \(a_n\) is also divergent? If so, explain why. If not, give an example to show this.</p></div></article></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.13/login.js"></script>

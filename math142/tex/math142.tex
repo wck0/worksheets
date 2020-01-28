@@ -1,6 +1,6 @@
 %**************************************%
 %*    Generated from PreTeXt source   *%
-%*    on 2020-01-28T10:14:36-08:00    *%
+%*    on 2020-01-28T10:39:37-08:00    *%
 %*                                    *%
 %*      https://pretextbook.org       *%
 %*                                    *%
@@ -182,6 +182,19 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \newcommand{\authorsptx}{\relax}%
 \newcommand{\epigraphptx}{\relax}%
 %% Create environments for possible occurences of each division
+%% Environment for a PTX "preface" at the level of a LaTeX "chapter"
+\NewDocumentEnvironment{preface}{mmmmmm}
+{%
+\renewcommand{\divisionnameptx}{Preface}%
+\renewcommand{\titleptx}{#1}%
+\renewcommand{\subtitleptx}{#2}%
+\renewcommand{\shortitleptx}{#3}%
+\renewcommand{\authorsptx}{#4}%
+\renewcommand{\epigraphptx}{#5}%
+\chapter*{#1}%
+\addcontentsline{toc}{chapter}{#3}
+\label{#6}%
+}{}%
 %% Environment for a PTX "part" at the level of a LaTeX "part"
 \NewDocumentEnvironment{partptx}{mmmmmm}
 {%
@@ -366,7 +379,56 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \newcommand{\amp}{&}
 %% End: Author-provided macros
 \begin{document}
-Let's get started.%
+\frontmatter
+%% begin: half-title
+\thispagestyle{empty}
+{\centering
+\vspace*{0.28\textheight}
+{\Huge Calculus \& Analytical Geometry II}\\}
+\clearpage
+%% end:   half-title
+%% begin: adcard
+\thispagestyle{empty}
+\null%
+\clearpage
+%% end:   adcard
+%% begin: title page
+%% Inspired by Peter Wilson's "titleDB" in "titlepages" CTAN package
+\thispagestyle{empty}
+{\centering
+\vspace*{0.14\textheight}
+%% Target for xref to top-level element is ToC
+\addtocontents{toc}{\protect\hypertarget{x:book:math142}{}}
+{\Huge Calculus \& Analytical Geometry II}\\[3\baselineskip]
+{\Large William C. Kronholm}\\[0.5\baselineskip]
+{\Large Whittier College}\\}
+\clearpage
+%% end:   title page
+%% begin: copyright-page
+\thispagestyle{empty}
+\vspace*{\stretch{2}}
+\vspace*{\stretch{1}}
+\null\clearpage
+%% end:   copyright-page
+%
+%
+\typeout{************************************************}
+\typeout{Preface  Preface}
+\typeout{************************************************}
+%
+\begin{preface}{Preface}{}{Preface}{}{}{x:preface:preface}
+This is a collection of definitions, examples, and activities intended for use in a typical second semester calculus course. The activities are designed to introduce new ideas to students in class as they work in groups.%
+\par
+The author is in the process of recoding this material from its original LaTeX source code to PreTeXt code. The materials may appear incomplete at times, as the process is ongoing.%
+\end{preface}
+%% begin: table of contents
+%% Adjust Table of Contents
+\setcounter{tocdepth}{0}
+\renewcommand*\contentsname{Contents}
+\tableofcontents
+%% end:   table of contents
+\mainmatter
+%
 %
 %
 \typeout{************************************************}
@@ -387,27 +449,27 @@ Let's get started.%
 \typeout{Section 1.1 Introduction}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm11}
+\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm21}
 Intuitively, a sequence is a list of numbers. More formally, a \terminology{sequence} \(\{a_n\}_{n \geq m}\) is the list of numbers \(a_m, a_{m+1}, a_{m+2}, \dots\).%
-\begin{example}{A Sequence.}{g:example:idm17}%
+\begin{example}{A Sequence.}{g:example:idm27}%
 The sequence \(\{a_n\}_{n \geq 2}\) where \(a_n = 3n-4\) is the sequnce below:%
 \begin{equation*}
 2, 5, 8, 11, 14, 17, \dots
 \end{equation*}
 We might more often describe that sequence by declaring that \(a_n = 3n-4\) for \(n \geq 2\)%
 \end{example}
-\begin{activity}{}{g:activity:idm25}%
+\begin{activity}{}{g:activity:idm35}%
 List the first five terms of the sequences below.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(a_n = n\) for \(n \geq 0\)\item{}\(b_n = -2n-1\) for \(n \geq 2\)\item{}\(c_n = \frac{2n+1}{n}\) for \(n \geq 1\)\item{}\(d_n = \left(\frac{2}{3}\right)^n\) for \(n \geq 0\)\item{}\(e_n = (-1)^n\) for \(n \geq 0\)\end{enumerate}
 \end{activity}
 A \terminology{closed form} for a sequence \(a_m, a_{m+1}, \dots\) is an explicit formula for the sequence.%
-\begin{example}{Closed Form.}{g:example:idm46}%
+\begin{example}{Closed Form.}{g:example:idm56}%
 A closed form for the sequence \(2, 4, 6, 8, \dots\) is \(a_n = 2n\) for \(n \geq 1\).%
 \par
 Another closed form for the same sequence is \(a_n = 2(n-1)\) for \(n \geq 0\)%
 \end{example}
-\begin{activity}{}{g:activity:idm55}%
+\begin{activity}{}{g:activity:idm65}%
 Determine a closed form expression for the sequences below. That is, write each as \(a_n = \textrm{something}\), \(n \geq m\). (You get to choose \(m\).) There are many (many!) correct expressions.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(2, 5, 8, 11, 14, \dots\)\item{}\(-3, 6, -12, 24, -48, \dots\)\item{}\(\frac{2}{3}, \frac{4}{5}, \frac{6}{7}, \frac{8}{9}, \frac{10}{11}, \dots\)\item{}\(-1, 1, -1, 1, -1, \dots\)\item{}\(1, 2, 1, 4, 1, 6, 1, 8, \dots\)\end{enumerate}
@@ -419,38 +481,38 @@ Determine a closed form expression for the sequences below. That is, write each 
 \typeout{Section 1.2 Convergence}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Convergence}{}{Convergence}{}{}{g:section:idm71}
+\begin{sectionptx}{Convergence}{}{Convergence}{}{}{g:section:idm81}
 For us, the most important feature of a sequence will be whether or not it converges, and, in the case of convergence, what it converges to. The definition of convergence should look familiar:%
 \par
 A sequence \(a_n\) \terminology{converges} to the real number \(L\) if given any \(\varepsilon > 0\) there is an integer \(N\) so that whenever \(n \geq N\), \(|a_n - L| < \varepsilon\). That is, if \(a_n\) is always close to \(L\) when \(n\) is big, then \(a_n\) converges to \(L\). We write this in the usual way: \(\displaystyle\lim_{n \to \infty}a_n = L\). Otherwise, the sequence \terminology{diverges}.%
 \par
 If \(a_n\) is a sequence and for any \(M > 0\) there is an integer \(N\) so that whenever \(n \geq N\), \(a_n > M\), then we say \(a_n\) \terminology{diverges to infinity} and write \(\displaystyle\lim_{n \to \infty}a_n = \infty\). If \(a_n\) is a sequence and for any \(M < 0\) there is an integer \(N\) so that whenever \(n \geq N\), \(a_n < M\), then we say \(a_n\) \terminology{diverges to negative infinity} and write \(\displaystyle\lim_{n \to \infty}a_n = -\infty\).%
-\begin{example}{}{g:example:idm106}%
+\begin{example}{}{g:example:idm116}%
 \(\displaystyle\lim_{n \to \infty} 3n-4 = \infty\) and \(\displaystyle\lim_{n \to \infty} \frac{3n-4}{2n+1} = \frac{3}{2}\).\end{example}
-\begin{activity}{}{g:activity:idm109}%
+\begin{activity}{}{g:activity:idm119}%
 For each of the sequences on the previous page, determine which converge and which do not. In case of convergence, determine the limit. In case of divergence, determine which diverge to infinity, which diverge to negative infinity, and which simply diverge.%
 \end{activity}
-\begin{activity}{}{g:activity:idm112}%
+\begin{activity}{}{g:activity:idm122}%
 Compute the limit as \(n\) goes to \(\infty\) of the sequences below. Most of the usual rules for computing limits of functions apply in the context of sequences.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(a_n = \frac{1}{n}\), \(n \geq 1\)\item{}\(b_n = \frac{3n-4}{1-4n}\), \(n \geq 0\)\item{}\(c_n = \left(\frac{3}{4}\right)^n\), \(n \geq 0\)\item{}\(d_n = \frac{1}{n} - \frac{1}{n-1}\), \(n \geq 2\)\item{}\(e_n = \sin(\pi n)\), \(n \geq 0\)\end{enumerate}
 \end{activity}
-\begin{activity}{}{g:activity:idm132}%
+\begin{activity}{}{g:activity:idm142}%
 Give an example of a sequence \(a_n\) and a continuous, non-zero function \(f\) so that the sequence \(a_n\) diverges, but the sequence \(f(a_n)\) converges. Show that both \(a_n\) and \(f(a_n)\) have the stated properties.%
 \end{activity}
-\begin{activity}{}{g:activity:idm141}%
+\begin{activity}{}{g:activity:idm151}%
 Create a sequence \(a_n\) so that \(0 \leq a_n \leq 3\) for all \(n\), and \(a_n\) is \terminology{increasing} in the sense that \(a_n \leq a_{n+1}\) for all \(n\). Show that your sequence has the required properties. Does your sequence converge?%
 \end{activity}
-\begin{activity}{}{g:activity:idm151}%
+\begin{activity}{}{g:activity:idm161}%
 Create a sequence \(a_n\) so that \(1 \leq a_n \leq 4\) for all \(n\), and \(a_n\) is \terminology{decreasing} in the sense that \(a_n \geq a_{n+1}\) for all \(n\). Show that your sequence has the required properties. Does your sequence converge?%
 \end{activity}
-\begin{activity}{}{g:activity:idm161}%
+\begin{activity}{}{g:activity:idm171}%
 Create a sequence \(a_n\) so that \(2 \leq a_n \leq 3\) for all \(n\), and \(a_n\) diverges. Is \(a_n\) increasing? Decreasing?%
 \end{activity}
-\begin{activity}{}{g:activity:idm169}%
+\begin{activity}{}{g:activity:idm179}%
 Is it true that if \(a_n \leq b_n\) for all \(n\), and \(b_n\) is convergent, then \(a_n\) is also convergent? If so, explain why. If not, give an example to show this.%
 \end{activity}
-\begin{activity}{}{g:activity:idm176}%
+\begin{activity}{}{g:activity:idm186}%
 Is it true that if \(a_n \geq b_n\) for all \(n\), and \(b_n\) is divergent, then \(a_n\) is also divergent? If so, explain why. If not, give an example to show this.%
 \end{activity}
 \end{sectionptx}
@@ -468,21 +530,21 @@ Is it true that if \(a_n \geq b_n\) for all \(n\), and \(b_n\) is divergent, the
 \typeout{Section 2.1 Introduction}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm185}
+\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm195}
 Given a sequence \(a_k\), the \terminology{summation} of \(a_k\) as \(k\) goes from \(m\) to \(n\) is denoted%
 \begin{equation*}
 \sum_{k=m}^n a_k = a_m + a_{m+1} + \cdots + a_n
 \end{equation*}
 The variable \(k\) used for the \terminology{index of summation} is arbitrary.%
-\begin{example}{A Summation.}{g:example:idm197}%
+\begin{example}{A Summation.}{g:example:idm207}%
 \(\displaystyle\sum_{k = 1}^5 k^2 = 1 + 4 + 9 + 16 + 25\)%
 \end{example}
-\begin{activity}{}{g:activity:idm201}%
+\begin{activity}{}{g:activity:idm211}%
 Determine the summations below.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(\displaystyle\sum_{k = -2}^5 k\)\item{}\(\displaystyle\sum_{j = 0}^3 2j^2+5j-1\)\item{}\(\displaystyle\sum_{k = 0}^5 2\)\item{}\(\displaystyle\sum_{\ell = -3}^3 \ell^3\)\end{enumerate}
 \end{activity}
-\begin{activity}{}{g:activity:idm212}%
+\begin{activity}{}{g:activity:idm222}%
 Combine the summations below into a single summation. Do not compute the sum.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(\displaystyle\sum_{k=0}^{25} (k+1)(k-1) + 3\sum_{k=0}^{25} k(k+1)\)\item{}\(\displaystyle\sum_{k=0}^{25} (k+1)(k-1) + 3\sum_{j=0}^{25} j(j+1)\)%
@@ -500,25 +562,25 @@ Combine the summations below into a single summation. Do not compute the sum.%
 \typeout{Section 2.2 Telescoping Sums}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Telescoping Sums}{}{Telescoping Sums}{}{}{g:section:idm227}
+\begin{sectionptx}{Telescoping Sums}{}{Telescoping Sums}{}{}{g:section:idm237}
 Given a function \(f\), the \terminology{finite difference} function \(\Delta f\) is given by \(\Delta f(k) = f(k) - f(k-1)\).%
-\begin{example}{A Finite Difference.}{g:example:idm234}%
+\begin{example}{A Finite Difference.}{g:example:idm244}%
  If \(f(x) = 2x+1\), then \(\Delta f(3) = f(3) - f(2) = 7-5\)\end{example}
-\begin{activity}{}{g:activity:idm238}%
+\begin{activity}{}{g:activity:idm248}%
 Let \(f(x) = x^2-x+1\). Compute the following.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(\Delta f(1)\)\item{}\(\Delta f(2)\)\item{}\(\Delta f(3)\)\item{}\(\Delta f(4)\)\item{}\(\displaystyle\sum_{k=1}^4\Delta f(k)\)\end{enumerate}
 \end{activity}
 Sometimes we specify the finite difference with simpler notation.%
-\begin{example}{Another Way to Write Finite Differences.}{g:example:idm253}%
+\begin{example}{Another Way to Write Finite Differences.}{g:example:idm263}%
 If \(f(x) = 3x-2\), then we can write \(\Delta f(k)\) as simply \(\Delta (3k-2)\). In this case, \(\Delta (3k-2) = (3k-2) - (3(k-1)-2) = 3k - 2 - (3k - 3 -2) = 3\).%
 \end{example}
-\begin{activity}{}{g:activity:idm260}%
+\begin{activity}{}{g:activity:idm270}%
 Compute the following.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(\Delta k\)\item{}\(\Delta k^2\)\item{}\(\Delta k^3\)\item{}\(\Delta 1\)\end{enumerate}
 \end{activity}
-\begin{activity}{}{g:activity:idm271}%
+\begin{activity}{}{g:activity:idm281}%
 Let \(f\) be a function.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Expand the summation \(\displaystyle\sum_{k = 1}^3 \Delta f(k)\). Is there any simplification to do? If so, simplify.%
@@ -532,8 +594,8 @@ Summations of the form \(\displaystyle\sum_{k = m+1}^n \Delta f(k)\) are called 
 \typeout{Section 2.3 Some Useful Summation Formulas}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Some Useful Summation Formulas}{}{Some Useful Summation Formulas}{}{}{g:section:idm288}
-\begin{activity}{}{g:activity:idm290}%
+\begin{sectionptx}{Some Useful Summation Formulas}{}{Some Useful Summation Formulas}{}{}{g:section:idm298}
+\begin{activity}{}{g:activity:idm300}%
 It will be convenient for us to have simple formulas for computing the sums \(\displaystyle\sum_{k=1}^n k\), \(\displaystyle\sum_{k=1}^n k^2\), and similar types of sums. Conveniently, we can view these as telescoping sums.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Show that \(k = \Delta \left[\frac{k(k+1)}{2}\right]\). That is, show that the right-hand side of the equation simplifies to \(k\).%
@@ -549,11 +611,11 @@ It will be convenient for us to have simple formulas for computing the sums \(\d
 \typeout{Section 2.4 Geometric Sequences and Sums}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Geometric Sequences and Sums}{}{Geometric Sequences and Sums}{}{}{g:section:idm308}
+\begin{sectionptx}{Geometric Sequences and Sums}{}{Geometric Sequences and Sums}{}{}{g:section:idm318}
 A sequence of the form \(a_n = b\cdot r^n\) where \(b\) and \(r\) are fixed real numbers is called a \terminology{geometric sequence}.%
 \par
 A sum of the form \(\displaystyle\sum_{k=m}^n b\cdot r^k\) is called a \terminology{geometric sum}. Notice that a geometric sum is a sum of terms of a geometric sequence.%
-\begin{activity}{}{g:activity:idm318}%
+\begin{activity}{}{g:activity:idm328}%
 Let \(r\) be any real number, but \(r \neq 1\).%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Show that \(\displaystyle r^k = \Delta \left[\frac{r^{k+1}}{r-1}\right]\).%
@@ -577,13 +639,13 @@ Let \(r\) be any real number, but \(r \neq 1\).%
 \typeout{Section 3.1 Introduction}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm338}
+\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm348}
 Recall that the \terminology{definite integral of \(f\) on the interval \([a,b]\)} is defined to be%
 \begin{equation*}
 \int_a^b f(x) dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i)\Delta x
 \end{equation*}
 where \(\displaystyle \Delta x = \frac{b-a}{n}\) and \(x_i = a + i \Delta x\) for \(i = 1, \dots, n\). This definite integral represents the area under the curve \(f\) from \(a\) to \(b\).%
-\begin{activity}{}{g:activity:idm351}%
+\begin{activity}{}{g:activity:idm361}%
 Let \(f(x) = x+1\) and \([a,b] = [-1,2]\).%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Make a sketch which indicates what \(\displaystyle\int_{-1}^2 f(x) \; dx\) represents.\item{}Determine \(\Delta x\)%
@@ -602,31 +664,31 @@ Let \(f(x) = x+1\) and \([a,b] = [-1,2]\).%
 \typeout{Section 3.2 More Activities}
 \typeout{************************************************}
 %
-\begin{sectionptx}{More Activities}{}{More Activities}{}{}{g:section:idm379}
-\begin{activity}{}{g:activity:idm381}%
+\begin{sectionptx}{More Activities}{}{More Activities}{}{}{g:section:idm389}
+\begin{activity}{}{g:activity:idm391}%
 Repeat the previous activity for the function \(g(x) = x^2\) on the interval \([0,2]\). That is, compute \(\displaystyle \int_0^2 x^2 \; dx\).%
 \par
 You may need to make use of the fact that \(\displaystyle\sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}\).%
 \end{activity}
-\begin{activity}{}{g:activity:idm389}%
+\begin{activity}{}{g:activity:idm399}%
 Compute \(\displaystyle\int_{-2}^2 x^2 \;dx\).%
 \par
 \emph{Hint}: Sketch a graph, look for symmetry, and use a previous result.%
 \end{activity}
-\begin{activity}{}{g:activity:idm395}%
+\begin{activity}{}{g:activity:idm405}%
 Let \(f(x) = x^2 -1 \).%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Compute \(\displaystyle \int_{-1}^1 f(x)\; dx\).\item{}Is your result positive or negative? Draw a picture, and use it to explain why this makes sense.%
 \end{enumerate}
 \end{activity}
-\begin{activity}{}{g:activity:idm403}%
+\begin{activity}{}{g:activity:idm413}%
 Suppose that \(\displaystyle \int_0^3 f(x)\;dx = 0\).%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Explain what this means in terms of the area under \(f\) from \(0\) to \(3\).%
 \item{}Draw at least three different graphs of functions where \(\displaystyle \int_0^3 f(x)\;dx = 0\). You do not need to come up with an explicit formula for your functions.%
 \end{enumerate}
 \end{activity}
-\begin{activity}{}{g:activity:idm415}%
+\begin{activity}{}{g:activity:idm425}%
 Let \(f(x) = 1-3x^2\).%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Find all values of \(b\) so that \(\displaystyle\int_0^b 1-3x^2\; dx = 0\).%

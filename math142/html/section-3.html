@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-01-28T10:14:45-08:00    *-->
+<!--*    on 2020-01-28T10:50:48-08:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -69,7 +69,7 @@ var js_version = 0.13;
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
 <h1 class="heading"><a href="math142.html"><span class="title">Calculus &amp; Analytical Geometry II</span></a></h1>
-<p class="byline"></p>
+<p class="byline">William C. Kronholm</p>
 </div>
 </div></div>
 <nav id="primary-navbar" class="navbar"><div class="container">
@@ -82,6 +82,9 @@ var js_version = 0.13;
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
+<li class="link">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul><li><a href="preface.html" data-scroll="preface">Preface</a></li></ul>
+</li>
 <li class="link part"><a href="part-sequences-and-series.html" data-scroll="part-sequences-and-series"><span class="codenumber">I</span> <span class="title">Sequences and Summations</span></a></li>
 <li class="link">
 <a href="chapter-sequences.html" data-scroll="chapter-sequences"><span class="codenumber">1</span> <span class="title">Sequences</span></a><ul>
@@ -109,7 +112,7 @@ var js_version = 0.13;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="section-3"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">Introduction</span>
 </h2>
-<p id="p-20">Given a sequence \(a_k\text{,}\) the <dfn class="terminology">summation</dfn> of \(a_k\) as \(k\) goes from \(m\) to \(n\) is denoted</p>
+<p id="p-22">Given a sequence \(a_k\text{,}\) the <dfn class="terminology">summation</dfn> of \(a_k\) as \(k\) goes from \(m\) to \(n\) is denoted</p>
 <div class="displaymath">
 \begin{equation*}
 \sum_{k=m}^n a_k = a_m + a_{m+1} + \cdots + a_n
@@ -118,20 +121,20 @@ var js_version = 0.13;
 <p data-braille="continuation">The variable \(k\) used for the <dfn class="terminology">index of summation</dfn> is arbitrary.</p>
 <article class="example example-like" id="example-4"><a data-knowl="" class="id-ref original" data-refid="hk-example-4"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">A Summation.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-4"><article class="example example-like"><p id="p-21">\(\displaystyle\sum_{k = 1}^5 k^2 = 1 + 4 + 9 + 16 + 25\)</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-4"><article class="example example-like"><p id="p-23">\(\displaystyle\sum_{k = 1}^5 k^2 = 1 + 4 + 9 + 16 + 25\)</p></article></div>
 <article class="activity project-like" id="activity-11"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-13"><p id="p-22">Determine the summations below.</p></div>
+<div class="introduction" id="introduction-13"><p id="p-24">Determine the summations below.</p></div>
 <article class="task exercise-like" id="task-16"><h6 class="heading"><span class="codenumber">(a)</span></h6>\(\displaystyle\sum_{k = -2}^5 k\)</article><article class="task exercise-like" id="task-17"><h6 class="heading"><span class="codenumber">(b)</span></h6>\(\displaystyle\sum_{j = 0}^3 2j^2+5j-1\)</article><article class="task exercise-like" id="task-18"><h6 class="heading"><span class="codenumber">(c)</span></h6>\(\displaystyle\sum_{k = 0}^5 2\)</article><article class="task exercise-like" id="task-19"><h6 class="heading"><span class="codenumber">(d)</span></h6>\(\displaystyle\sum_{\ell = -3}^3 \ell^3\)</article></article><article class="activity project-like" id="activity-12"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-14"><p id="p-23">Combine the summations below into a single summation. Do not compute the sum.</p></div>
+<div class="introduction" id="introduction-14"><p id="p-25">Combine the summations below into a single summation. Do not compute the sum.</p></div>
 <article class="task exercise-like" id="task-20"><h6 class="heading"><span class="codenumber">(a)</span></h6>\(\displaystyle\sum_{k=0}^{25} (k+1)(k-1) + 3\sum_{k=0}^{25} k(k+1)\)</article><article class="task exercise-like" id="task-21"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-24">\(\displaystyle\sum_{k=0}^{25} (k+1)(k-1) + 3\sum_{j=0}^{25} j(j+1)\)</p>
-<p id="p-25"><em class="emphasis">Hint</em>: The index of summation is arbitrary.</p></article><article class="task exercise-like" id="task-22"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-26">\(\displaystyle\sum_{k=0}^{25} (k+1)(k-1) + 3\sum_{k=2}^{27} k(k+1)\)</p>
-<p id="p-27"><em class="emphasis">Hint</em>: Shift the index of summation so that the two sums start at the same place, but don't change the value of the sum!</p></article></article></section></div></main>
+<p id="p-26">\(\displaystyle\sum_{k=0}^{25} (k+1)(k-1) + 3\sum_{j=0}^{25} j(j+1)\)</p>
+<p id="p-27"><em class="emphasis">Hint</em>: The index of summation is arbitrary.</p></article><article class="task exercise-like" id="task-22"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-28">\(\displaystyle\sum_{k=0}^{25} (k+1)(k-1) + 3\sum_{k=2}^{27} k(k+1)\)</p>
+<p id="p-29"><em class="emphasis">Hint</em>: Shift the index of summation so that the two sums start at the same place, but don't change the value of the sum!</p></article></article></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.13/login.js"></script>

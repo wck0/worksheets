@@ -2,9 +2,29 @@
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude">
   <book xml:id="math142">
     <title>Calculus &amp; Analytical Geometry II</title>
+    <frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <titlepage>
+        <author>
+            <personname>William C. Kronholm</personname>
+            <department>Department of Mathematics and Computer Science</department>
+            <institution>Whittier College</institution>
+            <email>wkronholm@whittier.edu</email>
+        </author>
+      </titlepage>
+      <preface xml:id="preface">
+        <p>
+          This is a collection of definitions, examples, and activities intended for use in a typical second semester calculus course.
+          The activities are designed to introduce new ideas to students in class as they work in groups.
+        </p>
+        <p>
+          The author is in the process of recoding this material from its original LaTeX source code to PreTeXt code.
+          The materials may appear incomplete at times, as the process is ongoing.
+        </p>
+      </preface>
+    </frontmatter>
     <introduction>
       <p>
-        Let's get started.
+        
       </p>
     </introduction>
     <part xml:id="part-sequences-and-series">
