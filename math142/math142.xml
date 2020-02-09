@@ -34,14 +34,13 @@
       </introduction>
       <xi:include href="./chapter-sequences.xml" />
       <xi:include href="./chapter-summations.xml" />
-      <xi:include href="./chapter-riemann-sums.xml" />
     </part>
     <part xml:id="part-integration">
       <title>Integration</title>
-      <p>
-        This worksheet discusses material from section 1.1 of your book.
-        We begin with some friendly review.
-      </p>
+      <introduction>
+      </introduction>
+      <xi:include href="./chapter-riemann-sums.xml" />
+      <xi:include href="./chapter-one-tricky-integral.xml" />
     </part>
   </book>
 </pretext>

@@ -1,6 +1,6 @@
 %**************************************%
 %*    Generated from PreTeXt source   *%
-%*    on 2020-01-28T10:39:37-08:00    *%
+%*    on 2020-02-09T13:39:44-08:00    *%
 %*                                    *%
 %*      https://pretextbook.org       *%
 %*                                    *%
@@ -626,7 +626,15 @@ Let \(r\) be any real number, but \(r \neq 1\).%
 \end{activity}
 \end{sectionptx}
 \end{chapterptx}
- %
+\end{partptx}
+%
+%
+\typeout{************************************************}
+\typeout{Part II Integration}
+\typeout{************************************************}
+%
+\begin{partptx}{Integration}{}{Integration}{}{}{x:part:part-integration}
+  %
 %
 \typeout{************************************************}
 \typeout{Chapter 3 Riemann Sums}
@@ -639,13 +647,13 @@ Let \(r\) be any real number, but \(r \neq 1\).%
 \typeout{Section 3.1 Introduction}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm348}
+\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm351}
 Recall that the \terminology{definite integral of \(f\) on the interval \([a,b]\)} is defined to be%
 \begin{equation*}
 \int_a^b f(x) dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i)\Delta x
 \end{equation*}
 where \(\displaystyle \Delta x = \frac{b-a}{n}\) and \(x_i = a + i \Delta x\) for \(i = 1, \dots, n\). This definite integral represents the area under the curve \(f\) from \(a\) to \(b\).%
-\begin{activity}{}{g:activity:idm361}%
+\begin{activity}{}{g:activity:idm364}%
 Let \(f(x) = x+1\) and \([a,b] = [-1,2]\).%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Make a sketch which indicates what \(\displaystyle\int_{-1}^2 f(x) \; dx\) represents.\item{}Determine \(\Delta x\)%
@@ -664,31 +672,31 @@ Let \(f(x) = x+1\) and \([a,b] = [-1,2]\).%
 \typeout{Section 3.2 More Activities}
 \typeout{************************************************}
 %
-\begin{sectionptx}{More Activities}{}{More Activities}{}{}{g:section:idm389}
-\begin{activity}{}{g:activity:idm391}%
+\begin{sectionptx}{More Activities}{}{More Activities}{}{}{g:section:idm392}
+\begin{activity}{}{g:activity:idm394}%
 Repeat the previous activity for the function \(g(x) = x^2\) on the interval \([0,2]\). That is, compute \(\displaystyle \int_0^2 x^2 \; dx\).%
 \par
 You may need to make use of the fact that \(\displaystyle\sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}\).%
 \end{activity}
-\begin{activity}{}{g:activity:idm399}%
+\begin{activity}{}{g:activity:idm402}%
 Compute \(\displaystyle\int_{-2}^2 x^2 \;dx\).%
 \par
 \emph{Hint}: Sketch a graph, look for symmetry, and use a previous result.%
 \end{activity}
-\begin{activity}{}{g:activity:idm405}%
+\begin{activity}{}{g:activity:idm408}%
 Let \(f(x) = x^2 -1 \).%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Compute \(\displaystyle \int_{-1}^1 f(x)\; dx\).\item{}Is your result positive or negative? Draw a picture, and use it to explain why this makes sense.%
 \end{enumerate}
 \end{activity}
-\begin{activity}{}{g:activity:idm413}%
+\begin{activity}{}{g:activity:idm416}%
 Suppose that \(\displaystyle \int_0^3 f(x)\;dx = 0\).%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Explain what this means in terms of the area under \(f\) from \(0\) to \(3\).%
 \item{}Draw at least three different graphs of functions where \(\displaystyle \int_0^3 f(x)\;dx = 0\). You do not need to come up with an explicit formula for your functions.%
 \end{enumerate}
 \end{activity}
-\begin{activity}{}{g:activity:idm425}%
+\begin{activity}{}{g:activity:idm428}%
 Let \(f(x) = 1-3x^2\).%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Find all values of \(b\) so that \(\displaystyle\int_0^b 1-3x^2\; dx = 0\).%
@@ -697,14 +705,53 @@ Let \(f(x) = 1-3x^2\).%
 \end{activity}
 \end{sectionptx}
 \end{chapterptx}
-\end{partptx}
+ %
+%
+\typeout{************************************************}
+\typeout{Chapter 4 One Tricky Integral}
+\typeout{************************************************}
+%
+\begin{chapterptx}{One Tricky Integral}{}{One Tricky Integral}{}{}{x:chapter:chapter-one-tricky-integral}
 %
 %
 \typeout{************************************************}
-\typeout{Part II Integration}
+\typeout{Section 4.1 \(\displaystyle \int_0^\pi \sin(x) \; dx\)}
 \typeout{************************************************}
 %
-\begin{partptx}{Integration}{}{Integration}{}{}{x:part:part-integration}
- This worksheet discusses material from section 1.1 of your book. We begin with some friendly review.%
+\begin{sectionptx}{\(\displaystyle \int_0^\pi \sin(x) \; dx\)}{}{\(\displaystyle \int_0^\pi \sin(x) \; dx\)}{}{}{g:section:idm440}
+Here you will compute \(\displaystyle \int_0^\pi \sin(x) \; dx\) using the definition of the Riemann integral.%
+\begin{activity}{}{g:activity:idm445}%
+Consider \(\displaystyle \int_{0}^\pi \sin(x) \; dx\).%
+\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
+\item{}Check that in this case \(x_i = i \Delta x\). (For what we are doing, we want everything in terms of \(\Delta x\).)%
+\item{}Write the Riemann sum \(\displaystyle \sum_{i=1}^n \sin(x_i) \Delta x\).%
+\item{}Write down the sum of angles formula for the cosine function. (Look this up if you have to.)%
+\begin{equation*}
+\cos(A+B) = 
+\end{equation*}
+%
+\item{}Write down the difference of angles formula for the cosine function. (Look this up if you have to.)%
+\begin{equation*}
+\cos(A-B) = 
+\end{equation*}
+%
+\item{}Use the above to simplify \(\cos(A-B) - \cos(A+B)\).%
+\item{}Replace \(A-B\) with \(a\) and \(A+B\) with \(b\) and simplify.%
+\item{}Check that you have \(\displaystyle \cos(b) - \cos(a) = 2 \sin \left(\frac{a+b}{2}\right) \sin\left(\frac{a-b}{2}\right)\).%
+\item{}Plug in \(\displaystyle a = \frac{2i+1}{2} \Delta x\) and \(\displaystyle b = \frac{2i-1}{2}\Delta x\) and simplify.%
+\item{}You should have an equation involving \(\sin(i \Delta x)\). Solve your equation for this term.%
+\item{}Use your last result to rewrite the Riemann sum under investigation: \(\displaystyle \sum_{i=1}^n \sin(x_i) \Delta x\).%
+\item{}Factor out all terms which do not contain \(i\). You should be left with a difference of two cosine terms in the summation.%
+\item{}Evaluate that sum. (\emph{Hint}: It is a telescoping sum. Write out some of the terms to see this. The whole point of all of the previous work was to get our sum to look like a telescoping sum.)%
+\item{}Recall that \(\displaystyle \int_0^\pi \sin(x) \;dx = \lim_{n \to \infty} \sum_{i=1}^n \sin(x_i) \Delta x\).%
+\item{}If \(n \to \infty\), what happens to \(\Delta x\)?%
+\item{}Express \(\displaystyle \int_0^\pi \sin(x) \; dx\) as a limit involving \(\Delta x\). That is, replace \(\displaystyle \lim_{n \to \infty}\) with \(\displaystyle \lim_{\Delta x \to c}\) for the appropriate value of \(c\).%
+\item{}Evaluate that limit.%
+\item{}What is \(\displaystyle \int_0^\pi \sin(x) \; dx\)?%
+\item{}Draw a picture illustrating what this definite integral represents.%
+\end{enumerate}
+\end{activity}
+\end{sectionptx}
+\end{chapterptx}
 \end{partptx}
 \end{document}

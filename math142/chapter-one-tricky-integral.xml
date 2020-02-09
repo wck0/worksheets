@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xml:id="chapter-one-tricky-integral" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>One Tricky Integral</title>
+  <section>
+    <title><m>\displaystyle \int_0^\pi \sin(x) \; dx</m></title>
+    <p>
+      Here you will compute <m>\displaystyle \int_0^\pi \sin(x) \; dx</m> using the definition of the Riemann integral.
+    </p>
+    <activity>
+      <introduction>
+        <p>Consider <m>\displaystyle \int_{0}^\pi \sin(x) \; dx</m>.</p>
+      </introduction>
+      <task>
+        <p>
+          Check that in this case <m>x_i = i \Delta x</m>.
+          (For what we are doing, we want everything in terms of <m>\Delta x</m>.)
+        </p>
+      </task>
+      <task>
+        <p>
+          Write the Riemann sum <m>\displaystyle \sum_{i=1}^n \sin(x_i) \Delta x</m>.
+        </p>
+      </task>
+      <p>
+        The rest of the work will be to massage this Riemann sum to the point where we can take a limit to evaluate the definite integral.
+      </p>
+      <task>
+        <p>
+          Write down the sum of angles formula for the cosine function. 
+          (Look this up if you have to.)
+
+          <me>\cos(A+B) = </me>
+        </p>
+      </task>
+      <task>
+        <p>
+          Write down the difference of angles formula for the cosine function.
+          (Look this up if you have to.)
+
+          <me>\cos(A-B) = </me>
+        </p>
+      </task>
+      <task>
+        <p>
+          Use the above to simplify <m>\cos(A-B) - \cos(A+B)</m>.
+        </p>
+      </task>
+      <task>
+        <p>
+          Replace <m>A-B</m> with <m>a</m> and <m>A+B</m> with <m>b</m> and simplify.
+        </p>
+      </task>
+      <task>
+        <p>
+          Check that you have <m>\displaystyle \cos(b) - \cos(a) = 2 \sin \left(\frac{a+b}{2}\right) \sin\left(\frac{a-b}{2}\right)</m>.
+        </p>
+      </task>
+      <task>
+        <p>
+          Plug in <m>\displaystyle a = \frac{2i+1}{2} \Delta x</m> and <m>\displaystyle b = \frac{2i-1}{2}\Delta x</m> and simplify.
+        </p>
+      </task>
+      <task>
+        <p>
+          You should have an equation involving <m>\sin(i \Delta x)</m>.
+          Solve your equation for this term.
+        </p>
+      </task>
+      <task>
+        <p>
+          Use your last result to rewrite the Riemann sum under investigation: <m>\displaystyle \sum_{i=1}^n \sin(x_i) \Delta x</m>.
+        </p>
+      </task>
+      <task>
+        <p>
+          Factor out all terms which do not contain <m>i</m>.
+          You should be left with a difference of two cosine terms in the summation.
+        </p>
+      </task>
+      <task>
+        <p>
+          Evaluate that sum.
+          (<em>Hint</em>: It is a telescoping sum.
+          Write out some of the terms to see this.
+          The whole point of all of the previous work was to get our sum to look like a telescoping sum.)
+        </p>
+      </task>
+      <task>
+        <p>
+          Recall that <m>\displaystyle \int_0^\pi \sin(x) \;dx = \lim_{n \to \infty} \sum_{i=1}^n \sin(x_i) \Delta x</m>.
+        </p>
+      </task>
+      <task>
+        <p>
+          If <m>n \to \infty</m>, what happens to <m>\Delta x</m>?
+        </p>
+      </task>
+      <task>
+        <p>
+          Express <m>\displaystyle \int_0^\pi \sin(x) \; dx</m> as a limit involving <m>\Delta x</m>.
+          That is, replace <m>\displaystyle \lim_{n \to \infty}</m> with <m>\displaystyle \lim_{\Delta x \to c}</m> for the appropriate value of <m>c</m>.
+        </p>
+      </task>
+      <task>
+        <p>
+          Evaluate that limit.
+        </p>
+      </task>
+      <task>
+        <p>
+          What is <m>\displaystyle \int_0^\pi \sin(x) \; dx</m>?
+        </p>
+      </task>
+      <task>
+        <p>
+          Draw a picture illustrating what this definite integral represents.
+        </p>
+      </task>
+    </activity>
+  </section>
+</chapter>

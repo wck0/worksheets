@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-02-09T13:40:50-08:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>\(\displaystyle \int_0^\pi \sin(x) \; dx\)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math142.html"><span class="title">Calculus &amp; Analytical Geometry II</span></a></h1>
+<p class="byline">William C. Kronholm</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-one-tricky-integral.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-one-tricky-integral.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-one-tricky-integral.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-one-tricky-integral.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul><li><a href="preface.html" data-scroll="preface">Preface</a></li></ul>
+</li>
+<li class="link part"><a href="part-sequences-and-series.html" data-scroll="part-sequences-and-series"><span class="codenumber">I</span> <span class="title">Sequences and Summations</span></a></li>
+<li class="link">
+<a href="chapter-sequences.html" data-scroll="chapter-sequences"><span class="codenumber">1</span> <span class="title">Sequences</span></a><ul>
+<li><a href="section-1.html" data-scroll="section-1">Introduction</a></li>
+<li><a href="section-2.html" data-scroll="section-2">Convergence</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter-summations.html" data-scroll="chapter-summations"><span class="codenumber">2</span> <span class="title">Summations</span></a><ul>
+<li><a href="section-3.html" data-scroll="section-3">Introduction</a></li>
+<li><a href="section-4.html" data-scroll="section-4">Telescoping Sums</a></li>
+<li><a href="section-5.html" data-scroll="section-5">Some Useful Summation Formulas</a></li>
+<li><a href="section-6.html" data-scroll="section-6">Geometric Sequences and Sums</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-integration.html" data-scroll="part-integration"><span class="codenumber">II</span> <span class="title">Integration</span></a></li>
+<li class="link">
+<a href="chapter-riemann-sums.html" data-scroll="chapter-riemann-sums"><span class="codenumber">3</span> <span class="title">Riemann Sums</span></a><ul>
+<li><a href="section-7.html" data-scroll="section-7">Introduction</a></li>
+<li><a href="section-8.html" data-scroll="section-8">More Activities</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter-one-tricky-integral.html" data-scroll="chapter-one-tricky-integral"><span class="codenumber">4</span> <span class="title">One Tricky Integral</span></a><ul><li><a href="section-9.html" data-scroll="section-9" class="active">\(\displaystyle \int_0^\pi \sin(x) \; dx\)</a></li></ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-9"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.1</span> <span class="title">\(\displaystyle \int_0^\pi \sin(x) \; dx\)</span>
+</h2>
+<p id="p-71">Here you will compute \(\displaystyle \int_0^\pi \sin(x) \; dx\) using the definition of the Riemann integral.</p>
+<article class="activity project-like" id="activity-24"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.1</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-27"><p id="p-72">Consider \(\displaystyle \int_{0}^\pi \sin(x) \; dx\text{.}\)</p></div>
+<article class="task exercise-like" id="task-58"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-73">Check that in this case \(x_i = i \Delta x\text{.}\) (For what we are doing, we want everything in terms of \(\Delta x\text{.}\))</p></article><article class="task exercise-like" id="task-59"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-74">Write the Riemann sum \(\displaystyle \sum_{i=1}^n \sin(x_i) \Delta x\text{.}\)</p></article><article class="task exercise-like" id="task-60"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-76">Write down the sum of angles formula for the cosine function. (Look this up if you have to.)</p>
+<div class="displaymath">
+\begin{equation*}
+\cos(A+B) = 
+\end{equation*}
+</div></article><article class="task exercise-like" id="task-61"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-77">Write down the difference of angles formula for the cosine function. (Look this up if you have to.)</p>
+<div class="displaymath">
+\begin{equation*}
+\cos(A-B) = 
+\end{equation*}
+</div></article><article class="task exercise-like" id="task-62"><h6 class="heading"><span class="codenumber">(e)</span></h6>
+<p id="p-78">Use the above to simplify \(\cos(A-B) - \cos(A+B)\text{.}\)</p></article><article class="task exercise-like" id="task-63"><h6 class="heading"><span class="codenumber">(f)</span></h6>
+<p id="p-79">Replace \(A-B\) with \(a\) and \(A+B\) with \(b\) and simplify.</p></article><article class="task exercise-like" id="task-64"><h6 class="heading"><span class="codenumber">(g)</span></h6>
+<p id="p-80">Check that you have \(\displaystyle \cos(b) - \cos(a) = 2 \sin \left(\frac{a+b}{2}\right) \sin\left(\frac{a-b}{2}\right)\text{.}\)</p></article><article class="task exercise-like" id="task-65"><h6 class="heading"><span class="codenumber">(h)</span></h6>
+<p id="p-81">Plug in \(\displaystyle a = \frac{2i+1}{2} \Delta x\) and \(\displaystyle b = \frac{2i-1}{2}\Delta x\) and simplify.</p></article><article class="task exercise-like" id="task-66"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<p id="p-82">You should have an equation involving \(\sin(i \Delta x)\text{.}\) Solve your equation for this term.</p></article><article class="task exercise-like" id="task-67"><h6 class="heading"><span class="codenumber">(j)</span></h6>
+<p id="p-83">Use your last result to rewrite the Riemann sum under investigation: \(\displaystyle \sum_{i=1}^n \sin(x_i) \Delta x\text{.}\)</p></article><article class="task exercise-like" id="task-68"><h6 class="heading"><span class="codenumber">(k)</span></h6>
+<p id="p-84">Factor out all terms which do not contain \(i\text{.}\) You should be left with a difference of two cosine terms in the summation.</p></article><article class="task exercise-like" id="task-69"><h6 class="heading"><span class="codenumber">(l)</span></h6>
+<p id="p-85">Evaluate that sum. (<em class="emphasis">Hint</em>: It is a telescoping sum. Write out some of the terms to see this. The whole point of all of the previous work was to get our sum to look like a telescoping sum.)</p></article><article class="task exercise-like" id="task-70"><h6 class="heading"><span class="codenumber">(m)</span></h6>
+<p id="p-86">Recall that \(\displaystyle \int_0^\pi \sin(x) \;dx = \lim_{n \to \infty} \sum_{i=1}^n \sin(x_i) \Delta x\text{.}\)</p></article><article class="task exercise-like" id="task-71"><h6 class="heading"><span class="codenumber">(n)</span></h6>
+<p id="p-87">If \(n \to \infty\text{,}\) what happens to \(\Delta x\text{?}\)</p></article><article class="task exercise-like" id="task-72"><h6 class="heading"><span class="codenumber">(o)</span></h6>
+<p id="p-88">Express \(\displaystyle \int_0^\pi \sin(x) \; dx\) as a limit involving \(\Delta x\text{.}\) That is, replace \(\displaystyle \lim_{n \to \infty}\) with \(\displaystyle \lim_{\Delta x \to c}\) for the appropriate value of \(c\text{.}\)</p></article><article class="task exercise-like" id="task-73"><h6 class="heading"><span class="codenumber">(p)</span></h6>
+<p id="p-89">Evaluate that limit.</p></article><article class="task exercise-like" id="task-74"><h6 class="heading"><span class="codenumber">(q)</span></h6>
+<p id="p-90">What is \(\displaystyle \int_0^\pi \sin(x) \; dx\text{?}\)</p></article><article class="task exercise-like" id="task-75"><h6 class="heading"><span class="codenumber">(r)</span></h6>
+<p id="p-91">Draw a picture illustrating what this definite integral represents.</p></article></article></section></div></main>
+</div>
+</body>
+</html>
