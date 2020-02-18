@@ -1,6 +1,6 @@
 %**************************************%
 %*    Generated from PreTeXt source   *%
-%*    on 2020-02-09T13:39:44-08:00    *%
+%*    on 2020-02-17T17:24:38-08:00    *%
 %*                                    *%
 %*      https://pretextbook.org       *%
 %*                                    *%
@@ -341,6 +341,10 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% Localize LaTeX supplied names (possibly none)
 \renewcommand*{\partname}{Part}
 \renewcommand*{\chaptername}{Chapter}
+%% Equation Numbering
+%% Controlled by  numbering.equations.level  processing parameter
+%% No adjustment here implies document-wide numbering
+\numberwithin{equation}{section}
 %% More flexible list management, esp. for references
 %% But also for specifying labels (i.e. custom order) on nested lists
 \usepackage{enumitem}
@@ -750,6 +754,115 @@ Consider \(\displaystyle \int_{0}^\pi \sin(x) \; dx\).%
 \item{}What is \(\displaystyle \int_0^\pi \sin(x) \; dx\)?%
 \item{}Draw a picture illustrating what this definite integral represents.%
 \end{enumerate}
+\end{activity}
+\end{sectionptx}
+\end{chapterptx}
+ %
+%
+\typeout{************************************************}
+\typeout{Chapter 5 Integration by Substitution}
+\typeout{************************************************}
+%
+\begin{chapterptx}{Integration by Substitution}{}{Integration by Substitution}{}{}{x:chapter:chapter-substitution}
+%
+%
+\typeout{************************************************}
+\typeout{Section 5.1 Introduction}
+\typeout{************************************************}
+%
+\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm514}
+Every rule for differentiation has a corresponding rule for antidifferentiation. Derivatives have the Chain Rule; antiderivatives have Substitution.%
+\end{sectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Section 5.2 Chain Rule}
+\typeout{************************************************}
+%
+\begin{sectionptx}{Chain Rule}{}{Chain Rule}{}{}{g:section:idm517}
+Recall that if \(F\) and \(g\) are functions, the Chain Rule for derivatives tells us how to determine the derivative of the composition function \(F(g(x))\):%
+\begin{equation*}
+\frac{d}{dx}F(g(x)) = F'(g(x))g'(x)
+\end{equation*}
+If \(f(x) = F'(x)\), we can rewrite this as%
+\begin{equation}
+\frac{d}{dx}F(g(x)) = f(g(x))g'(x)\label{x:men:eqn-chain-rule}
+\end{equation}
+%
+\begin{activity}{}{g:activity:idm526}%
+For the given \(F(x)\) and \(g(x)\) given below, use the Chain Rule to compute \(\displaystyle \frac{d}{dx}F(g(x))\).%
+\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
+\item{}\(F(x) = x^4\), \(g(x) = 3x^2+1\)\item{}\(F(x) = 3x^2+1\), \(g(x) = x^4\)\item{}\(F(x) = \cos(x)\), \(g(x) = x^2\)\item{}\(F(x) = x^2\), \(g(x) = \cos(x)\)\end{enumerate}
+\end{activity}
+\end{sectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Section 5.3 Antiderivatives by Substitution}
+\typeout{************************************************}
+%
+\begin{sectionptx}{Antiderivatives by Substitution}{}{Antiderivatives by Substitution}{}{}{g:section:idm544}
+\begin{activity}{}{g:activity:idm546}%
+Follow the short steps below to turn the Chain Rule for derivatives into the Substitution Rule for antiderivatives.%
+\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
+\item\label{x:task:task-rewrite-chain-rule-as-antiderivative}Write \hyperref[x:men:eqn-chain-rule]{(\ref{x:men:eqn-chain-rule})} as a rule for antiderivatives. Your equation should be of the form \(\displaystyle \int (\textrm{something})\;dx = (\textrm{something else}) + C\).%
+\item{}Let \(u = g(x)\). Compute \(\displaystyle \frac{du}{dx}\).%
+\item{}Solve that last equation for \(du\).%
+\item{}Plug in your work from the last two tasks into \hyperref[x:task:task-rewrite-chain-rule-as-antiderivative]{Task~\ref{g:activity:idm546}.\ref{x:task:task-rewrite-chain-rule-as-antiderivative}}.%
+\item{}Check that you have the following:%
+\begin{equation*}
+\int f(u)\;du = F(u) + C
+\end{equation*}
+where \(F'(u) = f(u)\).%
+\end{enumerate}
+\end{activity}
+Substitution for antiderivatives allows us to compute antiderivatives for some functions.%
+\begin{activity}{}{g:activity:idm568}%
+Consider the antiderivative \(\displaystyle \int \cos(5x)\;dx\)%
+\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
+\item{}Check that if \(u = 5x\) and \(f(x) = \cos(x)\), then the integrand is \(f(u)\)%
+\item{}With \(u = 5x\), determine \(du\), and solve that equation for \(dx\).%
+\item{}Use your work to rewrite the original antiderivative in terms of \(u\). Take care that there are not any \(x\)'s at all in your expression.%
+\item{}The new antiderivative in terms of \(u\)'s should be simpler. Compute it.%
+\item{}Take your result, and rewrite it in terms of \(x\)'s again.%
+\item{}%
+\begin{equation*}
+\int \cos(5x)\;dx = 
+\end{equation*}
+\end{enumerate}
+\end{activity}
+\begin{activity}{}{g:activity:idm594}%
+Using a process similar to the last activity, determine all of the following antiderivatives.%
+\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
+\item{}\(\displaystyle\int \sin(7x)\;dx\)\item{}\(\displaystyle\int \sec^2(2x)\;dx\)\item{}\(\displaystyle\int \exp(10x)\;dx\)\item{}\(\displaystyle\int x\exp(x^2)\;dx\)\item{}\(\displaystyle\int \sqrt{3x+5}\;dx\)\item{}\(\displaystyle\int x\sqrt{x^2+1}\;dx\)\item{}\(\displaystyle\int \frac{x}{\sqrt{x^2+1}}\;dx\)\item{}\(\displaystyle\int \frac{\ln(x)}{x}\;dx\)\item{}\(\displaystyle\int \frac{1}{x(\ln(x))^2}\;dx\)\item{}\(\displaystyle\int \frac{x}{x-50}\;dx\) (Try \(u=x-50\).)\end{enumerate}
+\end{activity}
+\end{sectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Section 5.4 Definite Integrals by Substitution}
+\typeout{************************************************}
+%
+\begin{sectionptx}{Definite Integrals by Substitution}{}{Definite Integrals by Substitution}{}{}{g:section:idm618}
+%
+\begin{example}{}{g:example:idm621}%
+We'll compute \(\displaystyle \int_{\sqrt{\pi/2}}^{\sqrt{\pi}} x\sin(x^2)\;dx\).%
+%
+\begin{align*}
+u = x^2 \;,\; du = 2\;dx\\
+x = \sqrt{\pi/2} \Rightarrow u = \pi/2\\
+x = \sqrt{\pi}  \Rightarrow u = \pi\\
+\int_{\sqrt{\pi/2}}^{\sqrt{\pi}} x\sin(x^2)\;dx \amp = \int_{\pi/2}^\pi \frac{1}{2}\sin(u)\;du\\
+\amp = \left(-\cos(u)\right)_{u=\pi/2}^{\pi}\\
+\amp = -\cos(\pi) + \cos(\pi/2)\\
+\amp = 1 + 0\\
+\amp = 1
+\end{align*}
+Notice that when we made the substitution, we also substituted the limits of integration. That is crucial, since the original limits were for \(x\), not \(u\).%
+\end{example}
+\begin{activity}{}{g:activity:idm636}%
+Use substitution to compute the following definite integrals.\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
+\item{}\(\displaystyle \int_{0}^{\pi/2} \sin(x)\cos(x) \; dx\)\item{}\(\displaystyle \int_{9}^{15} \frac{2x}{\sqrt{x^2-49}} \; dx\)\item{}\(\displaystyle \int_{e}^{e^2} \frac{\ln(x)}{x}\; dx\)\item{}\(\displaystyle \int_{0}^{4} \frac{3x}{\sqrt{1+6x^2}} \; dx\)\item{}\(\displaystyle \int_{\pi/3}^{\pi/2} \sec(2x) \tan(2x) \; dx\)\end{enumerate}
 \end{activity}
 \end{sectionptx}
 \end{chapterptx}

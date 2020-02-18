@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xml:id="chapter-substitution" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Integration by Substitution</title>
+  <section>
+    <title>Introduction</title>
+    <p>
+      Every rule for differentiation has a corresponding rule for antidifferentiation.
+      Derivatives have the Chain Rule; antiderivatives have Substitution.
+    </p>
+  </section>
+  <section>
+    <title>Chain Rule</title>
+    <p>
+      Recall that if <m>F</m> and <m>g</m> are functions, the Chain Rule for derivatives tells us how to determine the derivative of the composition function <m>F(g(x))</m>:
+      <me>\frac{d}{dx}F(g(x)) = F'(g(x))g'(x)</me>
+      If <m>f(x) = F'(x)</m>, we can rewrite this as
+      <men xml:id="eqn-chain-rule">\frac{d}{dx}F(g(x)) = f(g(x))g'(x)</men>
+    </p>
+    <activity>
+      <introduction>
+        <p>
+          For the given <m>F(x)</m> and <m>g(x)</m> given below, use the Chain Rule to compute <m>\displaystyle \frac{d}{dx}F(g(x))</m>.
+        </p>
+      </introduction>
+      <task>
+        <m>F(x) = x^4</m>, <m>g(x) = 3x^2+1</m>
+      </task>
+      <task>
+        <m>F(x) = 3x^2+1</m>, <m>g(x) = x^4</m>
+      </task>
+      <task>
+        <m>F(x) = \cos(x)</m>, <m>g(x) = x^2</m>
+      </task>
+      <task>
+        <m>F(x) = x^2</m>, <m>g(x) = \cos(x)</m>
+      </task>
+    </activity>
+  </section>
+  <section>
+    <title>Antiderivatives by Substitution</title>
+    <activity>
+      <introduction>
+        <p>
+          Follow the short steps below to turn the Chain Rule for derivatives into the Substitution Rule for antiderivatives.
+        </p>
+      </introduction>
+      <task xml:id="task-rewrite-chain-rule-as-antiderivative">
+        <p>
+          Write <xref ref="eqn-chain-rule"/> as a rule for antiderivatives.
+          Your equation should be of the form <m>\displaystyle \int (\textrm{something})\;dx = (\textrm{something else}) + C</m>.
+        </p>
+      </task>
+      <task>
+        <p>Let <m>u = g(x)</m>. Compute <m>\displaystyle \frac{du}{dx}</m>.</p>
+      </task>
+      <task>
+        <p>Solve that last equation for <m>du</m>.</p>
+      </task>
+      <task>
+        <p>Plug in your work from the last two tasks into <xref ref="task-rewrite-chain-rule-as-antiderivative"/>.</p>
+      </task>
+      <task>
+        <p>
+          Check that you have the following:
+          <me>\int f(u)\;du = F(u) + C</me>
+          where <m>F'(u) = f(u)</m>.
+        </p>
+      </task>
+    </activity>
+    <p>
+      Substitution for antiderivatives allows us to compute antiderivatives for some functions.
+    </p>
+    <activity>
+      <introduction>
+        <p>
+          Consider the antiderivative <m>\displaystyle \int \cos(5x)\;dx</m>
+        </p>
+      </introduction>
+      <task>
+        <p>
+          Check that if <m>u = 5x</m> and <m>f(x) = \cos(x)</m>, then the integrand is <m>f(u)</m>
+        </p>
+      </task>
+      <task>
+        <p>With <m>u = 5x</m>, determine <m>du</m>, and solve that equation for <m>dx</m>.</p>
+      </task>
+      <task>
+        <p>Use your work to rewrite the original antiderivative in terms of <m>u</m>. Take care that there are not any <m>x</m>'s at all in your expression.</p>
+      </task>
+      <task>
+        <p>The new antiderivative in terms of <m>u</m>'s should be simpler. Compute it.</p>
+      </task>
+      <task>
+        <p>Take your result, and rewrite it in terms of <m>x</m>'s again.</p>
+      </task>
+      <task>
+        <me>\int \cos(5x)\;dx = </me>
+      </task>
+    </activity>
+    <activity>
+      <introduction>
+        <p>
+          Using a process similar to the last activity, determine all of the following antiderivatives.
+        </p>
+      </introduction>
+      <task>
+        <m>\displaystyle\int \sin(7x)\;dx</m>
+      </task>
+      <task>
+        <m>\displaystyle\int \sec^2(2x)\;dx</m>
+      </task>
+      <task>
+        <m>\displaystyle\int \exp(10x)\;dx</m>
+      </task>
+      <task>
+        <m>\displaystyle\int x\exp(x^2)\;dx</m>
+      </task>
+      <task>
+        <m>\displaystyle\int \sqrt{3x+5}\;dx</m>
+      </task>
+      <task>
+        <m>\displaystyle\int x\sqrt{x^2+1}\;dx</m>
+      </task>
+      <task>
+        <m>\displaystyle\int \frac{x}{\sqrt{x^2+1}}\;dx</m>
+      </task>
+      <task>
+        <m>\displaystyle\int \frac{\ln(x)}{x}\;dx</m>
+      </task>
+      <task>
+        <m>\displaystyle\int \frac{1}{x(\ln(x))^2}\;dx</m>
+      </task>
+      <task>
+        <m>\displaystyle\int \frac{x}{x-50}\;dx</m> (Try <m>u=x-50</m>.)
+      </task>
+    </activity>
+  </section>
+  <section>
+    <title>Definite Integrals by Substitution</title>
+    <p>
+    </p>
+    <example>
+      <p>
+        We'll compute <m>\displaystyle \int_{\sqrt{\pi/2}}^{\sqrt{\pi}} x\sin(x^2)\;dx</m>.
+      </p>
+      <md>
+        <mrow>u = x^2 \;,\; du = 2\;dx</mrow>
+        <mrow>x = \sqrt{\pi/2} \Rightarrow u = \pi/2</mrow>
+        <mrow>x = \sqrt{\pi}  \Rightarrow u = \pi</mrow>
+        <mrow>\int_{\sqrt{\pi/2}}^{\sqrt{\pi}} x\sin(x^2)\;dx \amp = \int_{\pi/2}^\pi \frac{1}{2}\sin(u)\;du</mrow>
+        <mrow>\amp = \left(-\cos(u)\right)_{u=\pi/2}^{\pi}</mrow>
+        <mrow>\amp = -\cos(\pi) + \cos(\pi/2)</mrow>
+        <mrow>\amp = 1 + 0</mrow>
+        <mrow>\amp = 1</mrow>
+      </md>
+      <p>
+        Notice that when we made the substitution, we also substituted the limits of integration.
+        That is crucial, since the original limits were for <m>x</m>, not <m>u</m>.
+      </p>
+    </example>
+    <activity>
+      <introduction>
+        Use substitution to compute the following definite integrals.
+      </introduction>
+      <task>
+        <m>\displaystyle \int_{0}^{\pi/2} \sin(x)\cos(x) \; dx</m>
+      </task>
+      <task>
+        <m>\displaystyle \int_{9}^{15} \frac{2x}{\sqrt{x^2-49}} \; dx</m>
+      </task>
+      <task>
+        <m>\displaystyle \int_{e}^{e^2} \frac{\ln(x)}{x}\; dx</m>
+      </task>
+      <task>
+        <m>\displaystyle \int_{0}^{4} \frac{3x}{\sqrt{1+6x^2}} \; dx</m>
+      </task>
+      <task>
+        <m>\displaystyle \int_{\pi/3}^{\pi/2} \sec(2x) \tan(2x) \; dx</m>
+      </task>
+    </activity>
+  </section>
+</chapter>

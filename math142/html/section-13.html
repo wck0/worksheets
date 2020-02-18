@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-02-17T17:23:20-08:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Definite Integrals by Substitution</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math142.html"><span class="title">Calculus &amp; Analytical Geometry II</span></a></h1>
+<p class="byline">William C. Kronholm</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-12.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-substitution.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-12.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-substitution.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul><li><a href="preface.html" data-scroll="preface">Preface</a></li></ul>
+</li>
+<li class="link part"><a href="part-sequences-and-series.html" data-scroll="part-sequences-and-series"><span class="codenumber">I</span> <span class="title">Sequences and Summations</span></a></li>
+<li class="link">
+<a href="chapter-sequences.html" data-scroll="chapter-sequences"><span class="codenumber">1</span> <span class="title">Sequences</span></a><ul>
+<li><a href="section-1.html" data-scroll="section-1">Introduction</a></li>
+<li><a href="section-2.html" data-scroll="section-2">Convergence</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter-summations.html" data-scroll="chapter-summations"><span class="codenumber">2</span> <span class="title">Summations</span></a><ul>
+<li><a href="section-3.html" data-scroll="section-3">Introduction</a></li>
+<li><a href="section-4.html" data-scroll="section-4">Telescoping Sums</a></li>
+<li><a href="section-5.html" data-scroll="section-5">Some Useful Summation Formulas</a></li>
+<li><a href="section-6.html" data-scroll="section-6">Geometric Sequences and Sums</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-integration.html" data-scroll="part-integration"><span class="codenumber">II</span> <span class="title">Integration</span></a></li>
+<li class="link">
+<a href="chapter-riemann-sums.html" data-scroll="chapter-riemann-sums"><span class="codenumber">3</span> <span class="title">Riemann Sums</span></a><ul>
+<li><a href="section-7.html" data-scroll="section-7">Introduction</a></li>
+<li><a href="section-8.html" data-scroll="section-8">More Activities</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter-one-tricky-integral.html" data-scroll="chapter-one-tricky-integral"><span class="codenumber">4</span> <span class="title">One Tricky Integral</span></a><ul><li><a href="section-9.html" data-scroll="section-9">\(\displaystyle \int_0^\pi \sin(x) \; dx\)</a></li></ul>
+</li>
+<li class="link">
+<a href="chapter-substitution.html" data-scroll="chapter-substitution"><span class="codenumber">5</span> <span class="title">Integration by Substitution</span></a><ul>
+<li><a href="section-10.html" data-scroll="section-10">Introduction</a></li>
+<li><a href="section-11.html" data-scroll="section-11">Chain Rule</a></li>
+<li><a href="section-12.html" data-scroll="section-12">Antiderivatives by Substitution</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="active">Definite Integrals by Substitution</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-13"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5.4</span> <span class="title">Definite Integrals by Substitution</span>
+</h2>
+<p id="p-109"></p>
+<article class="example example-like" id="example-7"><a data-knowl="" class="id-ref original" data-refid="hk-example-7"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-7"><article class="example example-like"><p id="p-110">We'll compute \(\displaystyle \int_{\sqrt{\pi/2}}^{\sqrt{\pi}} x\sin(x^2)\;dx\text{.}\)</p>
+<div class="displaymath">
+\begin{align*}
+u = x^2 \;,\; du = 2\;dx\\
+x = \sqrt{\pi/2} \Rightarrow u = \pi/2\\
+x = \sqrt{\pi}  \Rightarrow u = \pi\\
+\int_{\sqrt{\pi/2}}^{\sqrt{\pi}} x\sin(x^2)\;dx \amp = \int_{\pi/2}^\pi \frac{1}{2}\sin(u)\;du\\
+\amp = \left(-\cos(u)\right)_{u=\pi/2}^{\pi}\\
+\amp = -\cos(\pi) + \cos(\pi/2)\\
+\amp = 1 + 0\\
+\amp = 1
+\end{align*}
+</div>
+<p id="p-111">Notice that when we made the substitution, we also substituted the limits of integration. That is crucial, since the original limits were for \(x\text{,}\) not \(u\text{.}\)</p></article></div>
+<article class="activity project-like" id="activity-29"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-32">Use substitution to compute the following definite integrals.</div>
+<article class="task exercise-like" id="task-101"><h6 class="heading"><span class="codenumber">(a)</span></h6>\(\displaystyle \int_{0}^{\pi/2} \sin(x)\cos(x) \; dx\)</article><article class="task exercise-like" id="task-102"><h6 class="heading"><span class="codenumber">(b)</span></h6>\(\displaystyle \int_{9}^{15} \frac{2x}{\sqrt{x^2-49}} \; dx\)</article><article class="task exercise-like" id="task-103"><h6 class="heading"><span class="codenumber">(c)</span></h6>\(\displaystyle \int_{e}^{e^2} \frac{\ln(x)}{x}\; dx\)</article><article class="task exercise-like" id="task-104"><h6 class="heading"><span class="codenumber">(d)</span></h6>\(\displaystyle \int_{0}^{4} \frac{3x}{\sqrt{1+6x^2}} \; dx\)</article><article class="task exercise-like" id="task-105"><h6 class="heading"><span class="codenumber">(e)</span></h6>\(\displaystyle \int_{\pi/3}^{\pi/2} \sec(2x) \tan(2x) \; dx\)</article></article></section></div></main>
+</div>
+</body>
+</html>

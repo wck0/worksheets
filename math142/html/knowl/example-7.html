@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-01-23T09:45:54-08:00    *-->
+<!--*    on 2020-02-17T17:23:20-08:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,21 @@
 </head>
 <body>
 <article class="example example-like"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">A Finite Difference.</span>
-</h6> If \(f(x) = 2x+1\text{,}\) then \(\Delta f(3) = f(3) - f(2) = 7-5\)</article><span class="incontext"><a href="section-8.html#example-7">in-context</a></span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span>
+</h6>
+<p>We'll compute \(\displaystyle \int_{\sqrt{\pi/2}}^{\sqrt{\pi}} x\sin(x^2)\;dx\text{.}\)</p>
+<div class="displaymath">
+\begin{align*}
+u = x^2 \;,\; du = 2\;dx\\
+x = \sqrt{\pi/2} \Rightarrow u = \pi/2\\
+x = \sqrt{\pi}  \Rightarrow u = \pi\\
+\int_{\sqrt{\pi/2}}^{\sqrt{\pi}} x\sin(x^2)\;dx \amp = \int_{\pi/2}^\pi \frac{1}{2}\sin(u)\;du\\
+\amp = \left(-\cos(u)\right)_{u=\pi/2}^{\pi}\\
+\amp = -\cos(\pi) + \cos(\pi/2)\\
+\amp = 1 + 0\\
+\amp = 1
+\end{align*}
+</div>
+<p>Notice that when we made the substitution, we also substituted the limits of integration. That is crucial, since the original limits were for \(x\text{,}\) not \(u\text{.}\)</p></article><span class="incontext"><a href="section-13.html#example-7">in-context</a></span>
 </body>
 </html>

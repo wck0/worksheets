@@ -41,6 +41,7 @@
       </introduction>
       <xi:include href="./chapter-riemann-sums.xml" />
       <xi:include href="./chapter-one-tricky-integral.xml" />
+      <xi:include href="./chapter-substitution.xml" />
     </part>
   </book>
 </pretext>
