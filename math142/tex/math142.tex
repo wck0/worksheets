@@ -1,6 +1,6 @@
 %**************************************%
 %*    Generated from PreTeXt source   *%
-%*    on 2020-02-17T17:24:38-08:00    *%
+%*    on 2020-02-21T08:50:41-08:00    *%
 %*                                    *%
 %*      https://pretextbook.org       *%
 %*                                    *%
@@ -41,8 +41,9 @@
 colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% Second, bold title, run-in to text/paragraph/heading
 %% Space afterwards will be controlled by environment,
-%% dependent of constructions of the tcb title
-\tcbset{ runintitlestyle/.style={fonttitle=\normalfont\bfseries, attach title to upper} }
+%% independent of constructions of the tcb title
+%% Places \blocktitlefont onto many block titles
+\tcbset{ runintitlestyle/.style={fonttitle=\blocktitlefont\upshape\bfseries, attach title to upper} }
 %% Spacing prior to each exercise, anywhere
 \tcbset{ exercisespacingstyle/.style={before skip={1.5ex plus 0.5ex}} }
 %% Spacing prior to each block
@@ -98,9 +99,12 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% \setmainfont can be re-issued, and \renewfontfamily can redefine others
 \setmainfont{Latin Modern Roman}[SmallCapsFont={Latin Modern Roman Caps}, SlantedFont={Latin Modern Roman Slanted}]
 \newfontfamily{\divisionfont}{Latin Modern Roman}
+\newfontfamily{\blocktitlefont}{Latin Modern Roman}
 \newfontfamily{\contentsfont}{Latin Modern Roman}
 \newfontfamily{\pagefont}{Latin Modern Roman}[SlantedFont={Latin Modern Roman Slanted}]
 \newfontfamily{\tabularfont}{Latin Modern Roman}[SmallCapsFont={Latin Modern Roman Caps}]
+\newfontfamily{\xreffont}{Latin Modern Roman}
+\newfontfamily{\titlepagefont}{Latin Modern Roman}
 %% begin: font information supplied by "font-xelatex-style" template
 %% end: font information supplied by "font-xelatex-style" template
 %% 
@@ -123,9 +127,12 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% These are more robust when using  xelatex  but may be employed with  pdflatex
 %% The following definitons are meant to be re-defined in a style with \renewcommand
 \newcommand{\divisionfont}{\relax}
+\newcommand{\blocktitlefont}{\relax}
 \newcommand{\contentsfont}{\relax}
 \newcommand{\pagefont}{\relax}
 \newcommand{\tabularfont}{\relax}
+\newcommand{\xreffont}{\relax}
+\newcommand{\titlepagefont}{\relax}
 %% begin: font information supplied by "font-pdflatex-style" template
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}
@@ -386,7 +393,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 \frontmatter
 %% begin: half-title
 \thispagestyle{empty}
-{\centering
+{\titlepagefont\centering
 \vspace*{0.28\textheight}
 {\Huge Calculus \& Analytical Geometry II}\\}
 \clearpage
@@ -399,7 +406,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% begin: title page
 %% Inspired by Peter Wilson's "titleDB" in "titlepages" CTAN package
 \thispagestyle{empty}
-{\centering
+{\titlepagefont\centering
 \vspace*{0.14\textheight}
 %% Target for xref to top-level element is ToC
 \addtocontents{toc}{\protect\hypertarget{x:book:math142}{}}
@@ -805,10 +812,10 @@ For the given \(F(x)\) and \(g(x)\) given below, use the Chain Rule to compute \
 \begin{activity}{}{g:activity:idm546}%
 Follow the short steps below to turn the Chain Rule for derivatives into the Substitution Rule for antiderivatives.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
-\item\label{x:task:task-rewrite-chain-rule-as-antiderivative}Write \hyperref[x:men:eqn-chain-rule]{(\ref{x:men:eqn-chain-rule})} as a rule for antiderivatives. Your equation should be of the form \(\displaystyle \int (\textrm{something})\;dx = (\textrm{something else}) + C\).%
+\item\label{x:task:task-rewrite-chain-rule-as-antiderivative}Write \hyperref[x:men:eqn-chain-rule]{({\xreffont\ref{x:men:eqn-chain-rule}})} as a rule for antiderivatives. Your equation should be of the form \(\displaystyle \int (\textrm{something})\;dx = (\textrm{something else}) + C\).%
 \item{}Let \(u = g(x)\). Compute \(\displaystyle \frac{du}{dx}\).%
 \item{}Solve that last equation for \(du\).%
-\item{}Plug in your work from the last two tasks into \hyperref[x:task:task-rewrite-chain-rule-as-antiderivative]{Task~\ref{g:activity:idm546}.\ref{x:task:task-rewrite-chain-rule-as-antiderivative}}.%
+\item{}Plug in your work from the last two tasks into \hyperref[x:task:task-rewrite-chain-rule-as-antiderivative]{Task~{\xreffont\ref{g:activity:idm546}}.{\xreffont\ref{x:task:task-rewrite-chain-rule-as-antiderivative}}}.%
 \item{}Check that you have the following:%
 \begin{equation*}
 \int f(u)\;du = F(u) + C
@@ -863,6 +870,54 @@ Notice that when we made the substitution, we also substituted the limits of int
 \begin{activity}{}{g:activity:idm636}%
 Use substitution to compute the following definite integrals.\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(\displaystyle \int_{0}^{\pi/2} \sin(x)\cos(x) \; dx\)\item{}\(\displaystyle \int_{9}^{15} \frac{2x}{\sqrt{x^2-49}} \; dx\)\item{}\(\displaystyle \int_{e}^{e^2} \frac{\ln(x)}{x}\; dx\)\item{}\(\displaystyle \int_{0}^{4} \frac{3x}{\sqrt{1+6x^2}} \; dx\)\item{}\(\displaystyle \int_{\pi/3}^{\pi/2} \sec(2x) \tan(2x) \; dx\)\end{enumerate}
+\end{activity}
+\end{sectionptx}
+\end{chapterptx}
+ %
+%
+\typeout{************************************************}
+\typeout{Chapter 6 Inverse Trigonometric Functions}
+\typeout{************************************************}
+%
+\begin{chapterptx}{Inverse Trigonometric Functions}{}{Inverse Trigonometric Functions}{}{}{x:chapter:chapter-inverse-trigonometric-functions}
+%
+%
+\typeout{************************************************}
+\typeout{Section 6.1 Introduction}
+\typeout{************************************************}
+%
+\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm650}
+Here we'll recall the differentiation formulas for inverse trigonometric functions, and use them to get the related antiderivative formulas.%
+\begin{activity}{}{g:activity:idm653}%
+Recall the following:%
+%
+\begin{align*}
+\displaystyle \frac{d}{dx}\arcsin(x) \amp = \frac{1}{\sqrt{1-x^2}}\\
+\displaystyle \frac{d}{dx}\arctan(x) \amp = \frac{1}{1+x^2}\\
+\displaystyle \frac{d}{dx}arcsec(x) \amp = \frac{1}{x\sqrt{x^2-1}}
+\end{align*}
+\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
+\item{}Determine \(\displaystyle \frac{d}{dx}\arcsin\left(\frac{x}{a}\right)\) where \(a\) is a constant. Simplify your answer to make it look nice.\item{}Determine \(\displaystyle \frac{d}{dx}\arctan\left(\frac{x}{a}\right)\) where \(a\) is a constant. Simplify your answer to make it look nice.\item{}Determine \(\displaystyle \frac{d}{dx}arcsec\left(\frac{x}{a}\right)\) where \(a\) is a constant. Simplify your answer to make it look nice.\item{}Rewrite each of the previous three statements about derivatives as their equivalent statement about antiderivatives.\end{enumerate}
+\end{activity}
+\end{sectionptx}
+%
+%
+\typeout{************************************************}
+\typeout{Section 6.2 Some Practice}
+\typeout{************************************************}
+%
+\begin{sectionptx}{Some Practice}{}{Some Practice}{}{}{g:section:idm670}
+\begin{activity}{}{g:activity:idm672}%
+Determine each of the antiderivatives below.\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
+\item{}\(\displaystyle \int \frac{dx}{\sqrt{4-x^2}}\)\item{}\(\displaystyle \int \frac{dx}{\sqrt{4-9x^2}}\)\item{}\(\displaystyle \int \frac{dx}{4+x^2}\)\item{}\(\displaystyle \int \frac{dx}{4+9x^2}\)\item{}\(\displaystyle \int \frac{e^x}{1 + e^{2x}}\;dx\)\item{}\(\displaystyle \int \frac{\tan(x)}{\sqrt{9-\cos^2(x)}}\;dx\)\end{enumerate}
+\end{activity}
+\begin{activity}{}{g:activity:idm686}%
+Determine each of the definite integrals below.\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
+\item{}\(\displaystyle\int_0^{5} \frac{dx}{25 + x^2}\)\item{}\(\displaystyle\int_{-9/2}^{9/2} \frac{dx}{\sqrt{81 - x^2}}\)\end{enumerate}
+\end{activity}
+\begin{activity}{}{g:activity:idm692}%
+Verify the following antiderivative formulas by taking an appropriate derivative. In each, \(a\) is a constant.\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
+\item{}\(\displaystyle \int \sqrt{a^2-x^2}\;dx = \frac{x}{2}\sqrt{a^2-x^2} + \frac{a^2}{2}\arcsin\left(\frac{x}{a}\right) + C\)\item{}\(\displaystyle \int \frac{x^2}{\sqrt{a^2-x^2}}\;dx = -\frac{x}{2}\sqrt{a^2-x^2} + \frac{a^2}{2}\arcsin\left(\frac{x}{a}\right) + C\)\end{enumerate}
 \end{activity}
 \end{sectionptx}
 \end{chapterptx}

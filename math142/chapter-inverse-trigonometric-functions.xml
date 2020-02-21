@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xml:id="chapter-inverse-trigonometric-functions" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Inverse Trigonometric Functions</title>
+  <section>
+    <title>Introduction</title>
+    <p>
+      Here we'll recall the differentiation formulas for inverse trigonometric functions, and use them to get the related antiderivative formulas.
+    </p>
+    <activity>
+      <introduction>
+        <p>Recall the following:</p>
+        <md>
+          <mrow>
+            \displaystyle \frac{d}{dx}\arcsin(x) \amp = \frac{1}{\sqrt{1-x^2}}
+          </mrow>
+          <mrow>
+            \displaystyle \frac{d}{dx}\arctan(x) \amp = \frac{1}{1+x^2}
+          </mrow>
+          <mrow>
+            \displaystyle \frac{d}{dx}arcsec(x) \amp = \frac{1}{x\sqrt{x^2-1}}
+          </mrow>
+        </md>
+      </introduction>
+      <task>
+        Determine <m>\displaystyle \frac{d}{dx}\arcsin\left(\frac{x}{a}\right)</m> where <m>a</m> is a constant.
+        Simplify your answer to make it look nice.
+      </task>
+      <task>
+        Determine <m>\displaystyle \frac{d}{dx}\arctan\left(\frac{x}{a}\right)</m> where <m>a</m> is a constant.
+        Simplify your answer to make it look nice.
+      </task>
+      <task>
+        Determine <m>\displaystyle \frac{d}{dx}arcsec\left(\frac{x}{a}\right)</m> where <m>a</m> is a constant.
+        Simplify your answer to make it look nice.
+      </task>
+      <task>
+        Rewrite each of the previous three statements about derivatives as their equivalent statement about antiderivatives.
+      </task>
+    </activity>
+    </section>
+    <section>
+    <title>Some Practice</title>
+    <activity>
+      <introduction>
+        Determine each of the antiderivatives below.
+      </introduction>
+      <task>
+        <m>\displaystyle \int \frac{dx}{\sqrt{4-x^2}}</m>
+      </task>
+      <task>
+        <m>\displaystyle \int \frac{dx}{\sqrt{4-9x^2}}</m>
+      </task>
+      <task>
+        <m>\displaystyle \int \frac{dx}{4+x^2}</m>
+      </task>
+      <task>
+        <m>\displaystyle \int \frac{dx}{4+9x^2}</m>
+      </task>
+      <task>
+        <m>\displaystyle \int \frac{e^x}{1 + e^{2x}}\;dx</m>
+      </task>
+      <task>
+        <m>\displaystyle \int \frac{\tan(x)}{\sqrt{9-\cos^2(x)}}\;dx</m>
+      </task>
+    </activity>
+    <activity>
+      <introduction>
+        Determine each of the definite integrals below.
+      </introduction>
+      <task>
+        <m>\displaystyle\int_0^{5} \frac{dx}{25 + x^2}</m>
+      </task>
+      <task>
+        <m>\displaystyle\int_{-9/2}^{9/2} \frac{dx}{\sqrt{81 - x^2}}</m>
+      </task>
+    </activity>
+    <activity>
+      <introduction>
+        Verify the following antiderivative formulas by taking an appropriate derivative.
+        In each, <m>a</m> is a constant.
+      </introduction>
+      <task>
+        <m>\displaystyle \int \sqrt{a^2-x^2}\;dx = \frac{x}{2}\sqrt{a^2-x^2} + \frac{a^2}{2}\arcsin\left(\frac{x}{a}\right) + C</m>
+      </task>
+      <task>
+        <m>\displaystyle \int \frac{x^2}{\sqrt{a^2-x^2}}\;dx = -\frac{x}{2}\sqrt{a^2-x^2} + \frac{a^2}{2}\arcsin\left(\frac{x}{a}\right) + C</m>
+      </task>
+    </activity>
+  </section>
+  
+</chapter>

@@ -42,6 +42,7 @@
       <xi:include href="./chapter-riemann-sums.xml" />
       <xi:include href="./chapter-one-tricky-integral.xml" />
       <xi:include href="./chapter-substitution.xml" />
+      <xi:include href="./chapter-inverse-trigonometric-functions.xml" />
     </part>
   </book>
 </pretext>
