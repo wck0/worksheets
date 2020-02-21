@@ -17,7 +17,7 @@
             \displaystyle \frac{d}{dx}\arctan(x) \amp = \frac{1}{1+x^2}
           </mrow>
           <mrow>
-            \displaystyle \frac{d}{dx}arcsec(x) \amp = \frac{1}{x\sqrt{x^2-1}}
+            \displaystyle \frac{d}{dx}\arcsec(x) \amp = \frac{1}{x\sqrt{x^2-1}}
           </mrow>
         </md>
       </introduction>
@@ -30,7 +30,7 @@
         Simplify your answer to make it look nice.
       </task>
       <task>
-        Determine <m>\displaystyle \frac{d}{dx}arcsec\left(\frac{x}{a}\right)</m> where <m>a</m> is a constant.
+        Determine <m>\displaystyle \frac{d}{dx}\arcsec\left(\frac{x}{a}\right)</m> where <m>a</m> is a constant.
         Simplify your answer to make it look nice.
       </task>
       <task>

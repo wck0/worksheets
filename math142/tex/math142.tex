@@ -1,6 +1,6 @@
 %**************************************%
 %*    Generated from PreTeXt source   *%
-%*    on 2020-02-21T08:50:41-08:00    *%
+%*    on 2020-02-21T09:25:25-08:00    *%
 %*                                    *%
 %*      https://pretextbook.org       *%
 %*                                    *%
@@ -384,7 +384,7 @@ colback=white, colbacktitle=white, coltitle=black, opacityfill=0.0} }
 %% Begin: Author-provided macros
 %% (From  docinfo/macros  element)
 %% Plus three from MBX for XML characters
-
+\DeclareMathOperator{\arcsec}{arcsec}
 \newcommand{\lt}{<}
 \newcommand{\gt}{>}
 \newcommand{\amp}{&}
@@ -460,27 +460,27 @@ The author is in the process of recoding this material from its original LaTeX s
 \typeout{Section 1.1 Introduction}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm21}
+\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm24}
 Intuitively, a sequence is a list of numbers. More formally, a \terminology{sequence} \(\{a_n\}_{n \geq m}\) is the list of numbers \(a_m, a_{m+1}, a_{m+2}, \dots\).%
-\begin{example}{A Sequence.}{g:example:idm27}%
+\begin{example}{A Sequence.}{g:example:idm30}%
 The sequence \(\{a_n\}_{n \geq 2}\) where \(a_n = 3n-4\) is the sequnce below:%
 \begin{equation*}
 2, 5, 8, 11, 14, 17, \dots
 \end{equation*}
 We might more often describe that sequence by declaring that \(a_n = 3n-4\) for \(n \geq 2\)%
 \end{example}
-\begin{activity}{}{g:activity:idm35}%
+\begin{activity}{}{g:activity:idm38}%
 List the first five terms of the sequences below.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(a_n = n\) for \(n \geq 0\)\item{}\(b_n = -2n-1\) for \(n \geq 2\)\item{}\(c_n = \frac{2n+1}{n}\) for \(n \geq 1\)\item{}\(d_n = \left(\frac{2}{3}\right)^n\) for \(n \geq 0\)\item{}\(e_n = (-1)^n\) for \(n \geq 0\)\end{enumerate}
 \end{activity}
 A \terminology{closed form} for a sequence \(a_m, a_{m+1}, \dots\) is an explicit formula for the sequence.%
-\begin{example}{Closed Form.}{g:example:idm56}%
+\begin{example}{Closed Form.}{g:example:idm59}%
 A closed form for the sequence \(2, 4, 6, 8, \dots\) is \(a_n = 2n\) for \(n \geq 1\).%
 \par
 Another closed form for the same sequence is \(a_n = 2(n-1)\) for \(n \geq 0\)%
 \end{example}
-\begin{activity}{}{g:activity:idm65}%
+\begin{activity}{}{g:activity:idm68}%
 Determine a closed form expression for the sequences below. That is, write each as \(a_n = \textrm{something}\), \(n \geq m\). (You get to choose \(m\).) There are many (many!) correct expressions.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(2, 5, 8, 11, 14, \dots\)\item{}\(-3, 6, -12, 24, -48, \dots\)\item{}\(\frac{2}{3}, \frac{4}{5}, \frac{6}{7}, \frac{8}{9}, \frac{10}{11}, \dots\)\item{}\(-1, 1, -1, 1, -1, \dots\)\item{}\(1, 2, 1, 4, 1, 6, 1, 8, \dots\)\end{enumerate}
@@ -492,38 +492,38 @@ Determine a closed form expression for the sequences below. That is, write each 
 \typeout{Section 1.2 Convergence}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Convergence}{}{Convergence}{}{}{g:section:idm81}
+\begin{sectionptx}{Convergence}{}{Convergence}{}{}{g:section:idm84}
 For us, the most important feature of a sequence will be whether or not it converges, and, in the case of convergence, what it converges to. The definition of convergence should look familiar:%
 \par
 A sequence \(a_n\) \terminology{converges} to the real number \(L\) if given any \(\varepsilon > 0\) there is an integer \(N\) so that whenever \(n \geq N\), \(|a_n - L| < \varepsilon\). That is, if \(a_n\) is always close to \(L\) when \(n\) is big, then \(a_n\) converges to \(L\). We write this in the usual way: \(\displaystyle\lim_{n \to \infty}a_n = L\). Otherwise, the sequence \terminology{diverges}.%
 \par
 If \(a_n\) is a sequence and for any \(M > 0\) there is an integer \(N\) so that whenever \(n \geq N\), \(a_n > M\), then we say \(a_n\) \terminology{diverges to infinity} and write \(\displaystyle\lim_{n \to \infty}a_n = \infty\). If \(a_n\) is a sequence and for any \(M < 0\) there is an integer \(N\) so that whenever \(n \geq N\), \(a_n < M\), then we say \(a_n\) \terminology{diverges to negative infinity} and write \(\displaystyle\lim_{n \to \infty}a_n = -\infty\).%
-\begin{example}{}{g:example:idm116}%
+\begin{example}{}{g:example:idm119}%
 \(\displaystyle\lim_{n \to \infty} 3n-4 = \infty\) and \(\displaystyle\lim_{n \to \infty} \frac{3n-4}{2n+1} = \frac{3}{2}\).\end{example}
-\begin{activity}{}{g:activity:idm119}%
+\begin{activity}{}{g:activity:idm122}%
 For each of the sequences on the previous page, determine which converge and which do not. In case of convergence, determine the limit. In case of divergence, determine which diverge to infinity, which diverge to negative infinity, and which simply diverge.%
 \end{activity}
-\begin{activity}{}{g:activity:idm122}%
+\begin{activity}{}{g:activity:idm125}%
 Compute the limit as \(n\) goes to \(\infty\) of the sequences below. Most of the usual rules for computing limits of functions apply in the context of sequences.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(a_n = \frac{1}{n}\), \(n \geq 1\)\item{}\(b_n = \frac{3n-4}{1-4n}\), \(n \geq 0\)\item{}\(c_n = \left(\frac{3}{4}\right)^n\), \(n \geq 0\)\item{}\(d_n = \frac{1}{n} - \frac{1}{n-1}\), \(n \geq 2\)\item{}\(e_n = \sin(\pi n)\), \(n \geq 0\)\end{enumerate}
 \end{activity}
-\begin{activity}{}{g:activity:idm142}%
+\begin{activity}{}{g:activity:idm145}%
 Give an example of a sequence \(a_n\) and a continuous, non-zero function \(f\) so that the sequence \(a_n\) diverges, but the sequence \(f(a_n)\) converges. Show that both \(a_n\) and \(f(a_n)\) have the stated properties.%
 \end{activity}
-\begin{activity}{}{g:activity:idm151}%
+\begin{activity}{}{g:activity:idm154}%
 Create a sequence \(a_n\) so that \(0 \leq a_n \leq 3\) for all \(n\), and \(a_n\) is \terminology{increasing} in the sense that \(a_n \leq a_{n+1}\) for all \(n\). Show that your sequence has the required properties. Does your sequence converge?%
 \end{activity}
-\begin{activity}{}{g:activity:idm161}%
+\begin{activity}{}{g:activity:idm164}%
 Create a sequence \(a_n\) so that \(1 \leq a_n \leq 4\) for all \(n\), and \(a_n\) is \terminology{decreasing} in the sense that \(a_n \geq a_{n+1}\) for all \(n\). Show that your sequence has the required properties. Does your sequence converge?%
 \end{activity}
-\begin{activity}{}{g:activity:idm171}%
+\begin{activity}{}{g:activity:idm174}%
 Create a sequence \(a_n\) so that \(2 \leq a_n \leq 3\) for all \(n\), and \(a_n\) diverges. Is \(a_n\) increasing? Decreasing?%
 \end{activity}
-\begin{activity}{}{g:activity:idm179}%
+\begin{activity}{}{g:activity:idm182}%
 Is it true that if \(a_n \leq b_n\) for all \(n\), and \(b_n\) is convergent, then \(a_n\) is also convergent? If so, explain why. If not, give an example to show this.%
 \end{activity}
-\begin{activity}{}{g:activity:idm186}%
+\begin{activity}{}{g:activity:idm189}%
 Is it true that if \(a_n \geq b_n\) for all \(n\), and \(b_n\) is divergent, then \(a_n\) is also divergent? If so, explain why. If not, give an example to show this.%
 \end{activity}
 \end{sectionptx}
@@ -541,21 +541,21 @@ Is it true that if \(a_n \geq b_n\) for all \(n\), and \(b_n\) is divergent, the
 \typeout{Section 2.1 Introduction}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm195}
+\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm198}
 Given a sequence \(a_k\), the \terminology{summation} of \(a_k\) as \(k\) goes from \(m\) to \(n\) is denoted%
 \begin{equation*}
 \sum_{k=m}^n a_k = a_m + a_{m+1} + \cdots + a_n
 \end{equation*}
 The variable \(k\) used for the \terminology{index of summation} is arbitrary.%
-\begin{example}{A Summation.}{g:example:idm207}%
+\begin{example}{A Summation.}{g:example:idm210}%
 \(\displaystyle\sum_{k = 1}^5 k^2 = 1 + 4 + 9 + 16 + 25\)%
 \end{example}
-\begin{activity}{}{g:activity:idm211}%
+\begin{activity}{}{g:activity:idm214}%
 Determine the summations below.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(\displaystyle\sum_{k = -2}^5 k\)\item{}\(\displaystyle\sum_{j = 0}^3 2j^2+5j-1\)\item{}\(\displaystyle\sum_{k = 0}^5 2\)\item{}\(\displaystyle\sum_{\ell = -3}^3 \ell^3\)\end{enumerate}
 \end{activity}
-\begin{activity}{}{g:activity:idm222}%
+\begin{activity}{}{g:activity:idm225}%
 Combine the summations below into a single summation. Do not compute the sum.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(\displaystyle\sum_{k=0}^{25} (k+1)(k-1) + 3\sum_{k=0}^{25} k(k+1)\)\item{}\(\displaystyle\sum_{k=0}^{25} (k+1)(k-1) + 3\sum_{j=0}^{25} j(j+1)\)%
@@ -573,25 +573,25 @@ Combine the summations below into a single summation. Do not compute the sum.%
 \typeout{Section 2.2 Telescoping Sums}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Telescoping Sums}{}{Telescoping Sums}{}{}{g:section:idm237}
+\begin{sectionptx}{Telescoping Sums}{}{Telescoping Sums}{}{}{g:section:idm240}
 Given a function \(f\), the \terminology{finite difference} function \(\Delta f\) is given by \(\Delta f(k) = f(k) - f(k-1)\).%
-\begin{example}{A Finite Difference.}{g:example:idm244}%
+\begin{example}{A Finite Difference.}{g:example:idm247}%
  If \(f(x) = 2x+1\), then \(\Delta f(3) = f(3) - f(2) = 7-5\)\end{example}
-\begin{activity}{}{g:activity:idm248}%
+\begin{activity}{}{g:activity:idm251}%
 Let \(f(x) = x^2-x+1\). Compute the following.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(\Delta f(1)\)\item{}\(\Delta f(2)\)\item{}\(\Delta f(3)\)\item{}\(\Delta f(4)\)\item{}\(\displaystyle\sum_{k=1}^4\Delta f(k)\)\end{enumerate}
 \end{activity}
 Sometimes we specify the finite difference with simpler notation.%
-\begin{example}{Another Way to Write Finite Differences.}{g:example:idm263}%
+\begin{example}{Another Way to Write Finite Differences.}{g:example:idm266}%
 If \(f(x) = 3x-2\), then we can write \(\Delta f(k)\) as simply \(\Delta (3k-2)\). In this case, \(\Delta (3k-2) = (3k-2) - (3(k-1)-2) = 3k - 2 - (3k - 3 -2) = 3\).%
 \end{example}
-\begin{activity}{}{g:activity:idm270}%
+\begin{activity}{}{g:activity:idm273}%
 Compute the following.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(\Delta k\)\item{}\(\Delta k^2\)\item{}\(\Delta k^3\)\item{}\(\Delta 1\)\end{enumerate}
 \end{activity}
-\begin{activity}{}{g:activity:idm281}%
+\begin{activity}{}{g:activity:idm284}%
 Let \(f\) be a function.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Expand the summation \(\displaystyle\sum_{k = 1}^3 \Delta f(k)\). Is there any simplification to do? If so, simplify.%
@@ -605,8 +605,8 @@ Summations of the form \(\displaystyle\sum_{k = m+1}^n \Delta f(k)\) are called 
 \typeout{Section 2.3 Some Useful Summation Formulas}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Some Useful Summation Formulas}{}{Some Useful Summation Formulas}{}{}{g:section:idm298}
-\begin{activity}{}{g:activity:idm300}%
+\begin{sectionptx}{Some Useful Summation Formulas}{}{Some Useful Summation Formulas}{}{}{g:section:idm301}
+\begin{activity}{}{g:activity:idm303}%
 It will be convenient for us to have simple formulas for computing the sums \(\displaystyle\sum_{k=1}^n k\), \(\displaystyle\sum_{k=1}^n k^2\), and similar types of sums. Conveniently, we can view these as telescoping sums.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Show that \(k = \Delta \left[\frac{k(k+1)}{2}\right]\). That is, show that the right-hand side of the equation simplifies to \(k\).%
@@ -622,11 +622,11 @@ It will be convenient for us to have simple formulas for computing the sums \(\d
 \typeout{Section 2.4 Geometric Sequences and Sums}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Geometric Sequences and Sums}{}{Geometric Sequences and Sums}{}{}{g:section:idm318}
+\begin{sectionptx}{Geometric Sequences and Sums}{}{Geometric Sequences and Sums}{}{}{g:section:idm321}
 A sequence of the form \(a_n = b\cdot r^n\) where \(b\) and \(r\) are fixed real numbers is called a \terminology{geometric sequence}.%
 \par
 A sum of the form \(\displaystyle\sum_{k=m}^n b\cdot r^k\) is called a \terminology{geometric sum}. Notice that a geometric sum is a sum of terms of a geometric sequence.%
-\begin{activity}{}{g:activity:idm328}%
+\begin{activity}{}{g:activity:idm331}%
 Let \(r\) be any real number, but \(r \neq 1\).%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Show that \(\displaystyle r^k = \Delta \left[\frac{r^{k+1}}{r-1}\right]\).%
@@ -658,13 +658,13 @@ Let \(r\) be any real number, but \(r \neq 1\).%
 \typeout{Section 3.1 Introduction}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm351}
+\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm354}
 Recall that the \terminology{definite integral of \(f\) on the interval \([a,b]\)} is defined to be%
 \begin{equation*}
 \int_a^b f(x) dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i)\Delta x
 \end{equation*}
 where \(\displaystyle \Delta x = \frac{b-a}{n}\) and \(x_i = a + i \Delta x\) for \(i = 1, \dots, n\). This definite integral represents the area under the curve \(f\) from \(a\) to \(b\).%
-\begin{activity}{}{g:activity:idm364}%
+\begin{activity}{}{g:activity:idm367}%
 Let \(f(x) = x+1\) and \([a,b] = [-1,2]\).%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Make a sketch which indicates what \(\displaystyle\int_{-1}^2 f(x) \; dx\) represents.\item{}Determine \(\Delta x\)%
@@ -683,31 +683,31 @@ Let \(f(x) = x+1\) and \([a,b] = [-1,2]\).%
 \typeout{Section 3.2 More Activities}
 \typeout{************************************************}
 %
-\begin{sectionptx}{More Activities}{}{More Activities}{}{}{g:section:idm392}
-\begin{activity}{}{g:activity:idm394}%
+\begin{sectionptx}{More Activities}{}{More Activities}{}{}{g:section:idm395}
+\begin{activity}{}{g:activity:idm397}%
 Repeat the previous activity for the function \(g(x) = x^2\) on the interval \([0,2]\). That is, compute \(\displaystyle \int_0^2 x^2 \; dx\).%
 \par
 You may need to make use of the fact that \(\displaystyle\sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}\).%
 \end{activity}
-\begin{activity}{}{g:activity:idm402}%
+\begin{activity}{}{g:activity:idm405}%
 Compute \(\displaystyle\int_{-2}^2 x^2 \;dx\).%
 \par
 \emph{Hint}: Sketch a graph, look for symmetry, and use a previous result.%
 \end{activity}
-\begin{activity}{}{g:activity:idm408}%
+\begin{activity}{}{g:activity:idm411}%
 Let \(f(x) = x^2 -1 \).%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Compute \(\displaystyle \int_{-1}^1 f(x)\; dx\).\item{}Is your result positive or negative? Draw a picture, and use it to explain why this makes sense.%
 \end{enumerate}
 \end{activity}
-\begin{activity}{}{g:activity:idm416}%
+\begin{activity}{}{g:activity:idm419}%
 Suppose that \(\displaystyle \int_0^3 f(x)\;dx = 0\).%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Explain what this means in terms of the area under \(f\) from \(0\) to \(3\).%
 \item{}Draw at least three different graphs of functions where \(\displaystyle \int_0^3 f(x)\;dx = 0\). You do not need to come up with an explicit formula for your functions.%
 \end{enumerate}
 \end{activity}
-\begin{activity}{}{g:activity:idm428}%
+\begin{activity}{}{g:activity:idm431}%
 Let \(f(x) = 1-3x^2\).%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Find all values of \(b\) so that \(\displaystyle\int_0^b 1-3x^2\; dx = 0\).%
@@ -729,9 +729,9 @@ Let \(f(x) = 1-3x^2\).%
 \typeout{Section 4.1 \(\displaystyle \int_0^\pi \sin(x) \; dx\)}
 \typeout{************************************************}
 %
-\begin{sectionptx}{\(\displaystyle \int_0^\pi \sin(x) \; dx\)}{}{\(\displaystyle \int_0^\pi \sin(x) \; dx\)}{}{}{g:section:idm440}
+\begin{sectionptx}{\(\displaystyle \int_0^\pi \sin(x) \; dx\)}{}{\(\displaystyle \int_0^\pi \sin(x) \; dx\)}{}{}{g:section:idm443}
 Here you will compute \(\displaystyle \int_0^\pi \sin(x) \; dx\) using the definition of the Riemann integral.%
-\begin{activity}{}{g:activity:idm445}%
+\begin{activity}{}{g:activity:idm448}%
 Consider \(\displaystyle \int_{0}^\pi \sin(x) \; dx\).%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Check that in this case \(x_i = i \Delta x\). (For what we are doing, we want everything in terms of \(\Delta x\).)%
@@ -777,7 +777,7 @@ Consider \(\displaystyle \int_{0}^\pi \sin(x) \; dx\).%
 \typeout{Section 5.1 Introduction}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm514}
+\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm517}
 Every rule for differentiation has a corresponding rule for antidifferentiation. Derivatives have the Chain Rule; antiderivatives have Substitution.%
 \end{sectionptx}
 %
@@ -786,7 +786,7 @@ Every rule for differentiation has a corresponding rule for antidifferentiation.
 \typeout{Section 5.2 Chain Rule}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Chain Rule}{}{Chain Rule}{}{}{g:section:idm517}
+\begin{sectionptx}{Chain Rule}{}{Chain Rule}{}{}{g:section:idm520}
 Recall that if \(F\) and \(g\) are functions, the Chain Rule for derivatives tells us how to determine the derivative of the composition function \(F(g(x))\):%
 \begin{equation*}
 \frac{d}{dx}F(g(x)) = F'(g(x))g'(x)
@@ -796,7 +796,7 @@ If \(f(x) = F'(x)\), we can rewrite this as%
 \frac{d}{dx}F(g(x)) = f(g(x))g'(x)\label{x:men:eqn-chain-rule}
 \end{equation}
 %
-\begin{activity}{}{g:activity:idm526}%
+\begin{activity}{}{g:activity:idm529}%
 For the given \(F(x)\) and \(g(x)\) given below, use the Chain Rule to compute \(\displaystyle \frac{d}{dx}F(g(x))\).%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(F(x) = x^4\), \(g(x) = 3x^2+1\)\item{}\(F(x) = 3x^2+1\), \(g(x) = x^4\)\item{}\(F(x) = \cos(x)\), \(g(x) = x^2\)\item{}\(F(x) = x^2\), \(g(x) = \cos(x)\)\end{enumerate}
@@ -808,14 +808,14 @@ For the given \(F(x)\) and \(g(x)\) given below, use the Chain Rule to compute \
 \typeout{Section 5.3 Antiderivatives by Substitution}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Antiderivatives by Substitution}{}{Antiderivatives by Substitution}{}{}{g:section:idm544}
-\begin{activity}{}{g:activity:idm546}%
+\begin{sectionptx}{Antiderivatives by Substitution}{}{Antiderivatives by Substitution}{}{}{g:section:idm547}
+\begin{activity}{}{g:activity:idm549}%
 Follow the short steps below to turn the Chain Rule for derivatives into the Substitution Rule for antiderivatives.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item\label{x:task:task-rewrite-chain-rule-as-antiderivative}Write \hyperref[x:men:eqn-chain-rule]{({\xreffont\ref{x:men:eqn-chain-rule}})} as a rule for antiderivatives. Your equation should be of the form \(\displaystyle \int (\textrm{something})\;dx = (\textrm{something else}) + C\).%
 \item{}Let \(u = g(x)\). Compute \(\displaystyle \frac{du}{dx}\).%
 \item{}Solve that last equation for \(du\).%
-\item{}Plug in your work from the last two tasks into \hyperref[x:task:task-rewrite-chain-rule-as-antiderivative]{Task~{\xreffont\ref{g:activity:idm546}}.{\xreffont\ref{x:task:task-rewrite-chain-rule-as-antiderivative}}}.%
+\item{}Plug in your work from the last two tasks into \hyperref[x:task:task-rewrite-chain-rule-as-antiderivative]{Task~{\xreffont\ref{g:activity:idm549}}.{\xreffont\ref{x:task:task-rewrite-chain-rule-as-antiderivative}}}.%
 \item{}Check that you have the following:%
 \begin{equation*}
 \int f(u)\;du = F(u) + C
@@ -824,7 +824,7 @@ where \(F'(u) = f(u)\).%
 \end{enumerate}
 \end{activity}
 Substitution for antiderivatives allows us to compute antiderivatives for some functions.%
-\begin{activity}{}{g:activity:idm568}%
+\begin{activity}{}{g:activity:idm571}%
 Consider the antiderivative \(\displaystyle \int \cos(5x)\;dx\)%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}Check that if \(u = 5x\) and \(f(x) = \cos(x)\), then the integrand is \(f(u)\)%
@@ -838,7 +838,7 @@ Consider the antiderivative \(\displaystyle \int \cos(5x)\;dx\)%
 \end{equation*}
 \end{enumerate}
 \end{activity}
-\begin{activity}{}{g:activity:idm594}%
+\begin{activity}{}{g:activity:idm597}%
 Using a process similar to the last activity, determine all of the following antiderivatives.%
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(\displaystyle\int \sin(7x)\;dx\)\item{}\(\displaystyle\int \sec^2(2x)\;dx\)\item{}\(\displaystyle\int \exp(10x)\;dx\)\item{}\(\displaystyle\int x\exp(x^2)\;dx\)\item{}\(\displaystyle\int \sqrt{3x+5}\;dx\)\item{}\(\displaystyle\int x\sqrt{x^2+1}\;dx\)\item{}\(\displaystyle\int \frac{x}{\sqrt{x^2+1}}\;dx\)\item{}\(\displaystyle\int \frac{\ln(x)}{x}\;dx\)\item{}\(\displaystyle\int \frac{1}{x(\ln(x))^2}\;dx\)\item{}\(\displaystyle\int \frac{x}{x-50}\;dx\) (Try \(u=x-50\).)\end{enumerate}
@@ -850,9 +850,9 @@ Using a process similar to the last activity, determine all of the following ant
 \typeout{Section 5.4 Definite Integrals by Substitution}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Definite Integrals by Substitution}{}{Definite Integrals by Substitution}{}{}{g:section:idm618}
+\begin{sectionptx}{Definite Integrals by Substitution}{}{Definite Integrals by Substitution}{}{}{g:section:idm621}
 %
-\begin{example}{}{g:example:idm621}%
+\begin{example}{}{g:example:idm624}%
 We'll compute \(\displaystyle \int_{\sqrt{\pi/2}}^{\sqrt{\pi}} x\sin(x^2)\;dx\).%
 %
 \begin{align*}
@@ -867,7 +867,7 @@ x = \sqrt{\pi}  \Rightarrow u = \pi\\
 \end{align*}
 Notice that when we made the substitution, we also substituted the limits of integration. That is crucial, since the original limits were for \(x\), not \(u\).%
 \end{example}
-\begin{activity}{}{g:activity:idm636}%
+\begin{activity}{}{g:activity:idm639}%
 Use substitution to compute the following definite integrals.\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(\displaystyle \int_{0}^{\pi/2} \sin(x)\cos(x) \; dx\)\item{}\(\displaystyle \int_{9}^{15} \frac{2x}{\sqrt{x^2-49}} \; dx\)\item{}\(\displaystyle \int_{e}^{e^2} \frac{\ln(x)}{x}\; dx\)\item{}\(\displaystyle \int_{0}^{4} \frac{3x}{\sqrt{1+6x^2}} \; dx\)\item{}\(\displaystyle \int_{\pi/3}^{\pi/2} \sec(2x) \tan(2x) \; dx\)\end{enumerate}
 \end{activity}
@@ -886,18 +886,18 @@ Use substitution to compute the following definite integrals.\begin{enumerate}[f
 \typeout{Section 6.1 Introduction}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm650}
+\begin{sectionptx}{Introduction}{}{Introduction}{}{}{g:section:idm653}
 Here we'll recall the differentiation formulas for inverse trigonometric functions, and use them to get the related antiderivative formulas.%
-\begin{activity}{}{g:activity:idm653}%
+\begin{activity}{}{g:activity:idm656}%
 Recall the following:%
 %
 \begin{align*}
 \displaystyle \frac{d}{dx}\arcsin(x) \amp = \frac{1}{\sqrt{1-x^2}}\\
 \displaystyle \frac{d}{dx}\arctan(x) \amp = \frac{1}{1+x^2}\\
-\displaystyle \frac{d}{dx}arcsec(x) \amp = \frac{1}{x\sqrt{x^2-1}}
+\displaystyle \frac{d}{dx}\arcsec(x) \amp = \frac{1}{x\sqrt{x^2-1}}
 \end{align*}
 \begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
-\item{}Determine \(\displaystyle \frac{d}{dx}\arcsin\left(\frac{x}{a}\right)\) where \(a\) is a constant. Simplify your answer to make it look nice.\item{}Determine \(\displaystyle \frac{d}{dx}\arctan\left(\frac{x}{a}\right)\) where \(a\) is a constant. Simplify your answer to make it look nice.\item{}Determine \(\displaystyle \frac{d}{dx}arcsec\left(\frac{x}{a}\right)\) where \(a\) is a constant. Simplify your answer to make it look nice.\item{}Rewrite each of the previous three statements about derivatives as their equivalent statement about antiderivatives.\end{enumerate}
+\item{}Determine \(\displaystyle \frac{d}{dx}\arcsin\left(\frac{x}{a}\right)\) where \(a\) is a constant. Simplify your answer to make it look nice.\item{}Determine \(\displaystyle \frac{d}{dx}\arctan\left(\frac{x}{a}\right)\) where \(a\) is a constant. Simplify your answer to make it look nice.\item{}Determine \(\displaystyle \frac{d}{dx}\arcsec\left(\frac{x}{a}\right)\) where \(a\) is a constant. Simplify your answer to make it look nice.\item{}Rewrite each of the previous three statements about derivatives as their equivalent statement about antiderivatives.\end{enumerate}
 \end{activity}
 \end{sectionptx}
 %
@@ -906,16 +906,16 @@ Recall the following:%
 \typeout{Section 6.2 Some Practice}
 \typeout{************************************************}
 %
-\begin{sectionptx}{Some Practice}{}{Some Practice}{}{}{g:section:idm670}
-\begin{activity}{}{g:activity:idm672}%
+\begin{sectionptx}{Some Practice}{}{Some Practice}{}{}{g:section:idm673}
+\begin{activity}{}{g:activity:idm675}%
 Determine each of the antiderivatives below.\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(\displaystyle \int \frac{dx}{\sqrt{4-x^2}}\)\item{}\(\displaystyle \int \frac{dx}{\sqrt{4-9x^2}}\)\item{}\(\displaystyle \int \frac{dx}{4+x^2}\)\item{}\(\displaystyle \int \frac{dx}{4+9x^2}\)\item{}\(\displaystyle \int \frac{e^x}{1 + e^{2x}}\;dx\)\item{}\(\displaystyle \int \frac{\tan(x)}{\sqrt{9-\cos^2(x)}}\;dx\)\end{enumerate}
 \end{activity}
-\begin{activity}{}{g:activity:idm686}%
+\begin{activity}{}{g:activity:idm689}%
 Determine each of the definite integrals below.\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(\displaystyle\int_0^{5} \frac{dx}{25 + x^2}\)\item{}\(\displaystyle\int_{-9/2}^{9/2} \frac{dx}{\sqrt{81 - x^2}}\)\end{enumerate}
 \end{activity}
-\begin{activity}{}{g:activity:idm692}%
+\begin{activity}{}{g:activity:idm695}%
 Verify the following antiderivative formulas by taking an appropriate derivative. In each, \(a\) is a constant.\begin{enumerate}[font=\bfseries,label=(\alph*),ref=\alph*]
 \item{}\(\displaystyle \int \sqrt{a^2-x^2}\;dx = \frac{x}{2}\sqrt{a^2-x^2} + \frac{a^2}{2}\arcsin\left(\frac{x}{a}\right) + C\)\item{}\(\displaystyle \int \frac{x^2}{\sqrt{a^2-x^2}}\;dx = -\frac{x}{2}\sqrt{a^2-x^2} + \frac{a^2}{2}\arcsin\left(\frac{x}{a}\right) + C\)\end{enumerate}
 \end{activity}
