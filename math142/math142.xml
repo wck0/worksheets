@@ -44,6 +44,8 @@
       <xi:include href="./chapter-one-tricky-integral.xml" />
       <xi:include href="./chapter-substitution.xml" />
       <xi:include href="./chapter-inverse-trigonometric-functions.xml" />
+      <xi:include href="./chapter-areas-between-curves.xml" />
+      <xi:include href="./chapter-cylindrical-shells.xml" />
     </part>
   </book>
 </pretext>

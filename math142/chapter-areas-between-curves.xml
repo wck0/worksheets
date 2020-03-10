@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xml:id="chapter-areas-between-curves" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Areas Between Curves</title>
+  <section>
+    <title>Introduction</title>
+    <p>
+      The area of a region in the plane bounded above by <m>f(x)</m> and below by <m>g(x)</m> for <m>x</m> values between <m>a</m> and <m>b</m> is given by
+      <me>\int_a^b f(x) - g(x) \; dx</me>
+      It's usually helpful to look at a graph to get a better sense of the situation.
+    </p>
+  </section>
+  <section>
+    <title>Practice</title>
+    <activity>
+      <introduction>
+        <p>
+          Determine the area of the regions enclosed by the curves listed below.
+          Draw a picture for each one.
+        </p>
+      </introduction>
+      <task>
+        <m>y=x^2</m>, <m>y=8-x^2</m>
+      </task>
+      <task>
+        <m>y=x^2</m>, <m>y=8-x^2</m>, in the first quadrant. (Hint: use symmetry.)
+      </task>
+      <task>
+        <m>y=\sqrt{x}</m>, <m>y=2\sqrt{x}</m>, <m>x=4</m>, <m>x=9</m>
+      </task>
+      <task>
+        <m>y=\sqrt{x}</m>, <m>y=2\sqrt{x}</m>, <m>x=9</m>
+      </task>
+      <task>
+        <m>y=\sqrt{x}</m>, <m>y=2\sqrt{x}</m>, <m>x=4</m> (Hint: use the last two.)
+      </task>
+      <task>
+        <m>y=\cos(\pi x / 2)</m>, <m>y= 1-x^2</m>, in the first quadrant. Explain how, without graphing, you could determine which of the two curves is "on top."
+      </task>
+      <task>
+        <m>y=x</m>, <m>y=\sqrt{x}</m>, <m>y=4</m> (Hint: turn your head sideways.)
+      </task>
+      <task>
+        <m>y=\ln(x)</m>, <m>y=0</m>, <m>x=e</m>
+      </task>
+      <task>
+        <m>y=\ln(x)</m>, <m>y=0</m>, <m>x=e</m>, but with your head sideways (unless that's what you did the first time, in which case do it with your head upright).
+      </task>
+    </activity>
+  </section>
+</chapter>
